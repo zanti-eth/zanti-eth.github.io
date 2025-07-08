@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🚧 System Maintenance</title>
+  <style>
+    body {
+      background: #0a0e17;
+      color: #e0e0e0;
+      font-family: 'Courier New', monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 2rem;
+    }
+    .terminal {
+      background: #0a0e17;
+      border-radius: 8px;
+      box-shadow: 0 0 0 1px #1f3a5e;
+      max-width: 800px;
+      width: 100%;
+    }
+    .terminal-header {
+      background: #1a1e2a;
+      padding: 0.5rem 1rem;
+      border-radius: 8px 8px 0 0;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+    .btn {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .red { background: #ff5f56; }
+    .yellow { background: #ffbd2e; }
+    .green { background: #27c93f; }
+    .magenta { color: #ff79c6; }
+    .title {
+      margin-left: 1rem;
+      color: #7e8b98;
+      font-size: 0.9rem;
+    }
+    .terminal-body {
+      padding: 2rem;
+      text-align: center;
+    }
+    h1 {
+      color: #ff5555;
+      margin-bottom: 2rem;
+    }
+    .typewriter {
+      text-align: left;
+      margin: 2rem auto;
+      max-width: 500px;
+    }
+    .cyan { color: #5af2f2; }
+    .green { color: #5af278; }
+    .blink {
+      animation: blink 1s step-end infinite;
+    }
+    @keyframes blink {
+      from, to { opacity: 1; }
+      50% { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="terminal">
+    <div class="terminal-header">
+      <span class="btn red"></span>
+      <span class="btn yellow"></span>
+      <span class="btn green"></span>
+      <span class="title">root@your-site:~</span>
+    </div>
+    <div class="terminal-body">
+      <h1>🚧 SYSTEM MAINTENANCE 🚧</h1>
+      
+      <div class="typewriter">
+        <p>> ./deploy_new_version.sh --progress</p>
+        <p class="cyan">[██████████░░░░] 87% complete</p>
+        <p>> Estimated completion in: <span id="countdown" class="green">24:00:00</span></p>
+        <p>> Visitors today: <span id="visitorCounter" class="magenta">0</span></p>
+        <p class="blink">> _</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Looping 24-hour Countdown Timer
+    const countdownEl = document.getElementById('countdown');
+    let remainingSeconds = 24 * 60 * 60; // 24 hours in seconds
+
+    function updateCountdown() {
+      remainingSeconds--;
+      
+      if (remainingSeconds <= 0) {
+        remainingSeconds = 24 * 60 * 60; // Reset to 24 hours
+      }
+      
+      const hours = Math.floor(remainingSeconds / 3600);
+      const mins = Math.floor((remainingSeconds % 3600) / 60);
+      const secs = remainingSeconds % 60;
+      
+      countdownEl.innerHTML = `${hours.toString().padStart(2,'0')}:${mins.toString().padStart(2,'0')}:${secs.toString().padStart(2,'0')}`;
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // Simple Visitor Counter
+    const counterEl = document.getElementById('visitorCounter');
+    function updateCounter() {
+      let count = localStorage.getItem('visitorCount');
+      const today = new Date().toDateString();
+      
+      if (!count || JSON.parse(count).date !== today) {
+        count = { date: today, value: 0 };
+      } else {
+        count = JSON.parse(count);
+      }
+      
+      count.value++;
+      localStorage.setItem('visitorCount', JSON.stringify(count));
+      counterEl.textContent = count.value;
+    }
+
+    updateCounter();
+  </script>
+</body>
+</html>

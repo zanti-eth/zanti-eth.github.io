@@ -4,7 +4,7 @@ title: ""
 ---
 
 {% if site.maintenance_mode %}
-  {% include maintenance.md %}
+  {% include maintenance.html %}
 {% else %}
 
   # 📰 Latest Posts
