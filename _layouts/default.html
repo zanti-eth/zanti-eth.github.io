@@ -37,6 +37,29 @@
         {{ content }}
       </section>
     </div>
+
+<!-- Cookie Banner Start -->
+
+<div id="cookie-banner" style="position: fixed; bottom: 0; left: 0; right: 0; background: #222; color: #fff; padding: 1em; text-align: center; font-size: 14px; z-index: 1000;">
+  🍪 This website uses cookies for analytics and user experience.
+  <button onclick="acceptCookies()" style="margin-left: 1em; padding: 0.5em 1em; background: #0f0; color: #000; font-weight: bold; border: none;">Got it</button>
+</div>
+
+<script>
+  function acceptCookies() {
+    document.getElementById('cookie-banner').style.display = 'none';
+    localStorage.setItem('cookiesAccepted', 'true');
+  }
+
+  // Hide banner if already accepted
+  if (localStorage.getItem('cookiesAccepted') === 'true') {
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('cookie-banner').style.display = 'none';
+    });
+  }
+</script>
+
+<!-- Cookie Banner End -->
   </body>
 </html>
 
