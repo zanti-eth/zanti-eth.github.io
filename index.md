@@ -3,13 +3,7 @@ layout: default
 title: ""
 ---
 
-# Welcome to the 0BTC Life
-
-Educational insights on cryptocurrency, Web3, and blockchain technology.
-
----
-
-## 📰 Latest Posts
+# 📰 Latest Posts
 
 <ul>
   {% for post in site.posts %}
@@ -24,10 +18,13 @@ Educational insights on cryptocurrency, Web3, and blockchain technology.
 
 {% include main_menu.html %}
 
+---
 
-## 📄 About Me
+# 📄 About Me
 
 [Learn more about me and this blog](about)
+
+---
 
 {% include socials.html %}
 
