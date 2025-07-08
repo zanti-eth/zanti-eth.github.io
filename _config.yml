@@ -5,6 +5,7 @@ title: the 0BTC Life
 description: Resources, research, analysis & insights to navigate the crypto space with 0BTC
 author: zanti
 email: zantti@proton.me
+maintenance_mode: true  # Set to false when ready
 
 # Optional extras:
 show_downloads: false

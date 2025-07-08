@@ -3,7 +3,11 @@ layout: default
 title: ""
 ---
 
-# 📰 Latest Posts
+{% if site.maintenance_mode %}
+  {% include maintenance.md %}
+{% else %}
+
+  # 📰 Latest Posts
 
 <ul>
   {% for post in site.posts %}
@@ -21,4 +25,8 @@ title: ""
 ---
 
 {% include socials.html %}
+
+{% endif %}
+
+
 
