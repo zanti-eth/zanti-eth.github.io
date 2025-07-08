@@ -3,8 +3,6 @@ layout: default
 title: ""
 ---
 
-{% include nav.html %}
-
 # Welcome to the 0BTC Life
 
 Educational insights on cryptocurrency, Web3, and blockchain technology.
@@ -23,6 +21,9 @@ Educational insights on cryptocurrency, Web3, and blockchain technology.
 </ul>
 
 ---
+
+{% include main_menu.html %}
+
 
 ## 📄 About Me
 

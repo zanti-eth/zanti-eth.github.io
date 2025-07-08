@@ -1,0 +1,21 @@
+## 🧭 Main Menu
+
+<div style="margin-top: 1em; font-family: monospace; color: #9f9;">
+
+  {% assign all_pages = site.pages | where_exp: "p", "p.path contains 'Category/'" %}
+  {% assign grouped = all_pages | group_by_exp: "p", "p.path | split: '/' | slice: 1, 1" %}
+
+  {% for group in grouped %}
+    {% assign category = group.name %}
+    <p><strong>📂 <span style="color:#9f9;">{{ category }}</span></strong></p>
+    <ul>
+      {% assign sorted_pages = group.items | sort: "title" %}
+      {% for page in sorted_pages %}
+        {% unless page.name == "index.md" %}
+          <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+        {% endunless %}
+      {% endfor %}
+    </ul>
+  {% endfor %}
+
+</div>
