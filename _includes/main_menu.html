@@ -2,7 +2,7 @@
 
 <div style="margin-top: 1em; font-family: monospace; color: #9f9;">
 
-  {% assign all_pages = site.pages | where_exp: "p", "p.path contains 'Category/'" %}
+  {% assign all_pages = site.pages | where_exp: "p", "p.path contains 'category/'" %}
   {% assign grouped = all_pages | group_by_exp: "p", "p.path | split: '/' | slice: 1, 1" %}
 
   {% for group in grouped %}
