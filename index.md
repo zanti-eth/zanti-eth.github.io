@@ -20,11 +20,5 @@ title: ""
 
 ---
 
-# 📄 About Me
-
-[Learn more about me and this blog](about)
-
----
-
 {% include socials.html %}
 
