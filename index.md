@@ -3,7 +3,9 @@ layout: default
 title: Home
 ---
 
-# Welcome to My Crypto Blog
+{% include nav.html %}
+
+# Welcome to the 0BTC Life
 
 Educational insights on cryptocurrency, Web3, and blockchain technology.
 

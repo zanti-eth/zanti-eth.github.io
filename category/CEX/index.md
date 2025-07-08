@@ -4,6 +4,8 @@ title: Centralized Exchanges (CEX)
 permalink: /cex/
 ---
 
+{% include nav.html %}
+
 # Centralized Exchanges (CEX)
 
 Explore the most popular CEX platforms:
