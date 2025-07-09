@@ -10,8 +10,10 @@ body {
 }
 
 
-.container, #main-content, header, footer {
-  
+footer {
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
 }
 
 
@@ -33,7 +35,7 @@ body {
 
 h1, h2, h3, h4 {
   font-weight: 600;
-  color: #9f9;
+  color: rgb(36, 230, 11);
 }
 
 /* Base link style */
