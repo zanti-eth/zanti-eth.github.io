@@ -14,19 +14,19 @@ h1, h2, h3, h4 {
 
 /* Base link style */
 a {
-  color: #66f;
-  text-decoration: none;
-  transition: color 0.2s ease-in-out, text-shadow 0.2s ease;
+  color: #66f !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease-in-out, text-shadow 0.2s ease !important;
 }
 
 /* Hover effect */
 a:hover {
-  color: #9f9; /* Neon green on hover */
-  text-shadow: 0 0 5px #9f9;
+  color: #9f9 /* Neon green on hover */ !important;
+  text-shadow: 0 0 5px #9f9 !important;
 }
 
 /* Optional: make links stand out inside paragraphs */
 p a {
-  font-weight: 500;
+  font-weight: 500 !important;
 }
 
