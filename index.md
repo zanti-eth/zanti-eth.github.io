@@ -7,7 +7,7 @@ title: ""
   {% include maintenance.html %}
 {% else %}
 
-  # 📰 Latest Posts
+# 📰 Latest Posts
 
 <ul>
   {% for post in site.posts %}
