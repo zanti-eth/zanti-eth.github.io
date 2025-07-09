@@ -9,7 +9,11 @@ body {
   background-image: url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
 }
 
+header {
 
+    border-bottom: 1px solid #f3f8f3;
+    padding-bottom: 1.5rem;
+}
 footer {
   background-color: transparent !important;
   background-image: none !important;
