@@ -21,7 +21,7 @@ a {
 
 /* Hover effect */
 a:hover {
-  color: #9f9 /* Neon green on hover */ !important;
+  color: #9f9 !important;
   text-shadow: 0 0 5px #9f9 !important;
 }
 
