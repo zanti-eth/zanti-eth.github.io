@@ -175,14 +175,3 @@ Now go forth and trade wisely! 🚀
 📢 **Want to support this guide?** Star it on [GitHub](https://github.com/yourusername) or share it with a fellow crypto enthusiast!  
 
 *(Disclaimer: Not financial advice. Crypto is volatile—DYOR!)*  
-
----
-
-### 🖼️ Suggested Images for Your GitHub Page:  
-1. Binance logo  
-2. CZ (Changpeng Zhao) photo  
-3. Trading dashboard screenshot  
-4. BNB token icon  
-5. Security tips infographic  
-
-Would you like me to adjust anything or add more details? 😊
