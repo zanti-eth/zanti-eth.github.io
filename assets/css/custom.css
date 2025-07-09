@@ -2,10 +2,33 @@
 
 body {
   font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.6;
-  color: #ddd;
+  color: #fff;
+  background-color: #000;
 }
+
+
+.container, #main-content, header, footer {
+  background-color: transparent !important;
+}
+
+
+/* Chrome/Edge scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #000;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+
 
 h1, h2, h3, h4 {
   font-weight: 600;
@@ -14,7 +37,7 @@ h1, h2, h3, h4 {
 
 /* Base link style */
 a {
-  color: #66f !important;
+  color: rgb(7, 125, 204) !important;
   text-decoration: none !important;
   transition: color 0.2s ease-in-out, text-shadow 0.2s ease !important;
 }
