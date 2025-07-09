@@ -22,10 +22,6 @@ title: ""
 
 {% include main_menu.html %}
 
----
-
-{% include socials.html %}
-
 {% endif %}
 
 
