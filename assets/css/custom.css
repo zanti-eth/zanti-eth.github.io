@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap');
 
-
 body {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 16px;
   line-height: 1.6;
   color: #ddd;
 }
+
 h1, h2, h3, h4 {
   font-weight: 600;
   color: #9f9;
@@ -21,7 +21,7 @@ a {
 
 /* Hover effect */
 a:hover {
-  color: #9f9 !important;
+  color: #9f9 !important; /* Neon green on hover */
   text-shadow: 0 0 5px #9f9 !important;
 }
 
@@ -29,4 +29,3 @@ a:hover {
 p a {
   font-weight: 500 !important;
 }
-
