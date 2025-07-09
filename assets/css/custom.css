@@ -6,12 +6,12 @@ body {
   line-height: 1.6;
   color: #fff;
   background-color: #000;
-  background-image: none;
+  background-image: url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
 }
 
 
 .container, #main-content, header, footer {
-  background-image: url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
+  
 }
 
 
