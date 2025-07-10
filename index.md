@@ -3,6 +3,9 @@ layout: default
 title: "index"
 ---
 
+{% include main_menu.html %}
+
+
 # 📰 Latest Posts
 
 <ul>
@@ -14,7 +17,7 @@ title: "index"
   {% endfor %}
 </ul>
 
-{% include main_menu.html %}
+<!-- force rebuild -->
 
 
 

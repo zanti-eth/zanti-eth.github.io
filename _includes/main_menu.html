@@ -1,5 +1,3 @@
-<!-- _includes/main_menu.html -->
-
 <div class="nav-folder">
   <style>
     .nav-folder {
@@ -16,9 +14,6 @@
     .nav-subfolder,
     .nav-files {
       margin-left: 1em;
-    }
-    .nav-files {
-      display: block;
     }
   </style>
 
@@ -41,6 +36,7 @@
 
   {% assign all_pages = site.pages | where_exp: "p", "p.path contains 'category/'" %}
   {% assign categories = {} %}
+
   {% for page in all_pages %}
     {% assign parts = page.path | split: '/' %}
     {% assign main = parts[1] %}
@@ -60,6 +56,7 @@
 
   {% for main in top_level %}
     <p><strong>📂 <span style="color:#9f9;">{{ main }}</span></strong></p>
+
     {% assign prefix = main | append: "/" %}
     {% assign second_level_keys = categories | keys | where_exp: "k", "k contains prefix" | sort %}
 
