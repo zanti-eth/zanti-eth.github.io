@@ -1,5 +1,25 @@
-<p>Main menu include is working!</p>
-<ul>
-  <li><a href="/category/glossary/bagholder.html">Glossary: Bagholder</a></li>
-  <li><a href="/category/CEX/binance.html">CEX: Binance</a></li>
-</ul>
+<div style="margin-top:1em; font-family: monospace; color: #9f9;">
+  {% assign all_pages = site.pages | where_exp: "p", "p.path contains 'category/'" %}
+  {% assign categories = {} %}
+
+  {% for page in all_pages %}
+    {% assign parts = page.path | split: '/' %}
+    {% assign category = parts[1] %}
+    {% assign _ = categories[category] = categories[category] | default: "" | append: page.path | append: "||" %}
+  {% endfor %}
+
+  {% assign sorted_categories = categories | keys | sort %}
+
+  {% for cat in sorted_categories %}
+    <p><strong>📂 {{ cat }}</strong></p>
+    <ul>
+      {% assign page_paths = categories[cat] | split: "||" | sort %}
+      {% for path in page_paths %}
+        {% assign page = site.pages | where: "path", path | first %}
+        {% if page and page.name != "index.md" %}
+          <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  {% endfor %}
+</div>
