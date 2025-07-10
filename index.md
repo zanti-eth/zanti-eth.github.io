@@ -5,7 +5,12 @@ title: "index"
 
 # 🏦 CEXes
 
-  - ![alt text](<./assets/images/Screenshot 2024-02-15 104723-1.png>)
+- First item
+- Second item
+- Third item
+    - Indented item
+    - Indented item
+- Fourth item
 
 # 📰 Latest Posts
 
