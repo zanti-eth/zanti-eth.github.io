@@ -1,6 +1,6 @@
 ---
 layout: default
-title: ""
+title: "index"
 ---
 
 {% if site.maintenance_mode %}
