@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "index"
+title: "inde"
 ---
 
 {% include main_menu.html %}
