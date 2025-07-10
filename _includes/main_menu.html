@@ -1,47 +1,45 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-
-# 🧭 Nav
-
-<style>
-  .nav-folder {
-    margin-top: 1em;
-    font-family: monospace;
-    color: #9f9;
-  }
-  .toggle-btn {
-    cursor: pointer;
-    color: #6f6;
-    font-weight: bold;
-    margin-right: 5px;
-  }
-  .nav-subfolder,
-  .nav-files {
-    margin-left: 1em;
-  }
-</style>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll(".toggle-btn").forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        const target = btn.nextElementSibling;
-        if (target.style.display === "none") {
-          target.style.display = "block";
-          btn.textContent = "▾";
-        } else {
-          target.style.display = "none";
-          btn.textContent = "▸";
-        }
-      });
-    });
-  });
-</script>
+<!-- _includes/main_menu.html -->
 
 <div class="nav-folder">
+  <style>
+    .nav-folder {
+      margin-top: 1em;
+      font-family: monospace;
+      color: #9f9;
+    }
+    .toggle-btn {
+      cursor: pointer;
+      color: #6f6;
+      font-weight: bold;
+      margin-right: 5px;
+    }
+    .nav-subfolder,
+    .nav-files {
+      margin-left: 1em;
+    }
+    .nav-files {
+      display: block;
+    }
+  </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".toggle-btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          const target = btn.nextElementSibling;
+          if (target.style.display === "none") {
+            target.style.display = "block";
+            btn.textContent = "▾";
+          } else {
+            target.style.display = "none";
+            btn.textContent = "▸";
+          }
+        });
+      });
+    });
+  </script>
 
   {% assign all_pages = site.pages | where_exp: "p", "p.path contains 'category/'" %}
-  
   {% assign categories = {} %}
   {% for page in all_pages %}
     {% assign parts = page.path | split: '/' %}
@@ -62,13 +60,14 @@
 
   {% for main in top_level %}
     <p><strong>📂 <span style="color:#9f9;">{{ main }}</span></strong></p>
+    {% assign prefix = main | append: "/" %}
+    {% assign second_level_keys = categories | keys | where_exp: "k", "k contains prefix" | sort %}
 
-    {% assign second_level_keys = categories | keys | where_exp: "k", "k contains '" | append: main | append: "/'" | sort %}
     <ul class="nav-subfolder">
       {% for key in second_level_keys %}
         {% assign parts = key | split: '/' %}
         {% assign sub = parts[1] %}
-        {% assign page_paths = categories[key] | split: '||' | sort %}
+        {% assign page_paths = (categories[key] | default: "") | split: '||' | sort %}
         {% assign page_count = page_paths | size %}
 
         <li>
@@ -87,4 +86,3 @@
     </ul>
   {% endfor %}
 </div>
-</html>
