@@ -3,7 +3,7 @@ layout: default
 title: "index"
 ---
 
-{% include main_menu.html %}
+{% include menu.html %}
 
 
 # 📰 Latest Posts
