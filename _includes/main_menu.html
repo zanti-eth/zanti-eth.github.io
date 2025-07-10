@@ -38,13 +38,13 @@
 <div class="nav-folder">
 
   {% assign all_pages = site.pages | where_exp: "p", "p.path contains 'category/'" %}
-  
   {% assign categories = {} %}
+
   {% for page in all_pages %}
-    {% assign parts = page.path | split: '/' %}
-    {% assign main = parts[1] %}
-    {% assign sub = parts[2] %}
-    {% assign subsub = parts[3] %}
+    {% assign parts   = page.path | split: '/' %}
+    {% assign main    = parts[1] %}
+    {% assign sub     = parts[2] %}
+    {% assign subsub  = parts[3] %}
     
     {% if subsub %}
       {% capture key %}{{ main }}/{{ sub }}{% endcapture %}
@@ -58,14 +58,20 @@
   {% assign top_level = categories | keys | map: "split" | map: first | uniq | sort %}
 
   {% for main in top_level %}
-    <p><strong>📂 <span style="color:#9f9;">{{ main }}</span></strong></p>
+    <p><strong>📂 {{ main }}</strong></p>
 
-    {% assign second_level_keys = categories | keys | where_exp: "k", "k contains '" | append: main | append: "/'" | sort %}
+    {% assign prefix = main | append: "/" %}
+    {% assign second_level_keys = categories
+        | keys
+        | where_exp: "k", "k contains prefix"
+        | sort %}
+
     <ul class="nav-subfolder">
       {% for key in second_level_keys %}
-        {% assign parts = key | split: '/' %}
-        {% assign sub = parts[1] %}
-        {% assign page_paths = categories[key] | split: '||' | sort %}
+        {% assign parts      = key | split: '/' %}
+        {% assign sub        = parts[1] %}
+        {% assign raw_paths  = categories[key] | default: "" %}
+        {% assign page_paths = raw_paths | split: '||' | sort %}
         {% assign page_count = page_paths | size %}
 
         <li>
@@ -83,4 +89,6 @@
       {% endfor %}
     </ul>
   {% endfor %}
+
 </div>
+
