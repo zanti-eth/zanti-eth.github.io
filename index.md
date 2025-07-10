@@ -5,6 +5,11 @@ title: "index"
 
 {% include menu.html %}
 
+<ul>
+  {% for p in site.pages %}
+    <li>{{ p.path }}</li>
+  {% endfor %}
+</ul>
 
 # 📰 Latest Posts
 
