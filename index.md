@@ -3,9 +3,7 @@ layout: default
 title: "index"
 ---
 
-{% if site.maintenance_mode %}
-  {% include maintenance.html %}
-{% else %}
+{% include main_menu.html %}
 
 # 📰 Latest Posts
 
@@ -20,9 +18,9 @@ title: "index"
 
 
 
-{% include main_menu.html %}
 
-{% endif %}
+
+
 
 
 
