@@ -1,147 +1,125 @@
+---
 --- 
---- 
-
 <style>
+  /* Completely hide the front matter dashes */
+  body {
+    counter-reset: front-matter;
+  }
+  
   .nav-folder {
     margin-top: 1em;
     font-family: monospace;
     color: #9f9;
   }
   
-  /* Hide the front matter dashes */
-  .nav-folder::before {
-    display: none !important;
-  }
-  
-  /* Remove theme arrows ONLY from folder titles */
-  .nav-folder li > span:first-child:has(> 📁),
-  .nav-folder li > span:first-child:has(> 📂) {
+  /* Remove ALL theme arrows from folders */
+  .nav-folder ul, 
+  .nav-folder li {
     list-style-type: none !important;
   }
-  .nav-folder li > span:first-child:has(> 📁)::before,
-  .nav-folder li > span:first-child:has(> 📂)::before {
-    content: "" !important;
-  }
   
-  /* Style for regular links with spacing */
-  .nav-folder .nav-files li {
-    margin: 0.3em 0; /* Space between pages */
-  }
-  .nav-folder .nav-files li::before {
-    content: "▶ ";
-  }
-  
-  /* Folder styling with spacing */
-  .nav-subfolder > li {
-    margin: 0.5em 0; /* Space between folders */
-  }
-  
-  .toggle-btn {
-    cursor: pointer;
-    color: #6f6;
-    font-weight: bold;
-    margin-right: 5px;
-  }
-  .nav-subfolder,
-  .nav-files {
-    margin-left: 1em;
-  }
-  .nav-files {
+  /* Style for regular links */
+  .nav-folder a {
     display: block;
-    margin: 0.5em 0; /* Space after folder header */
+    margin: 0.3em 0;
+    padding-left: 1em;
+  }
+  
+  /* Folder styling */
+  .nav-folder > ul > li {
+    margin: 0.5em 0;
+  }
+  
+  /* Folder icon styling */
+  .folder-icon {
+    margin-right: 5px;
   }
 </style>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    document.querySelectorAll(".nav-subfolder > li:has(> ul)").forEach(function(item) {
-      if (!item.querySelector('.toggle-btn') && 
-          !item.querySelector('span::before')) {
-        const toggle = document.createElement("span");
-        toggle.className = "toggle-btn";
-        toggle.textContent = "▾";
-        item.insertBefore(toggle, item.firstChild);
-        
-        const subList = item.querySelector("ul");
-        subList.style.display = "block";
-        
-        toggle.addEventListener("click", function() {
-          subList.style.display = subList.style.display === "none" ? "block" : "none";
-          toggle.textContent = subList.style.display === "none" ? "▸" : "▾";
-        });
-      }
+document.addEventListener("DOMContentLoaded", function() {
+  // Remove any existing theme toggles
+  document.querySelectorAll('.nav-folder .nav-list-expander').forEach(el => el.remove());
+  
+  // Add our clean toggle functionality
+  document.querySelectorAll('.nav-folder li:has(ul)').forEach(item => {
+    const folderTitle = item.firstElementChild;
+    const toggle = document.createElement('span');
+    toggle.className = 'toggle-btn';
+    toggle.textContent = '▾';
+    toggle.style.marginRight = '5px';
+    folderTitle.insertBefore(toggle, folderTitle.firstChild);
+    
+    const subList = item.querySelector('ul');
+    subList.style.display = 'block';
+    
+    toggle.addEventListener('click', () => {
+      subList.style.display = subList.style.display === 'none' ? 'block' : 'none';
+      toggle.textContent = subList.style.display === 'none' ? '▸' : '▾';
     });
   });
+});
 </script>
 
 <div class="nav-folder">
-  {% assign all_pages = site.pages | sort: 'path' %}
+  {% assign all_pages = site.pages | sort: 'path' | where_exp: "p", "p.path contains 'category/'" %}
   
-  {% comment %} Collect main categories {% endcomment %}
-  {% assign main_categories = "" | split: "" %}
+  {% comment %} Build category structure {% endcomment %}
+  {% assign categories = "" | split: "" %}
   {% for page in all_pages %}
-    {% if page.path contains 'category/' %}
-      {% assign parts = page.path | split: '/' %}
-      {% assign main = parts[1] %}
-      {% unless main_categories contains main %}
-        {% assign main_categories = main_categories | push: main %}
-      {% endunless %}
-    {% endif %}
+    {% assign parts = page.path | split: '/' %}
+    {% assign main = parts[1] %}
+    {% assign sub = parts[2] %}
+    
+    {% unless categories contains main %}
+      {% assign categories = categories | push: main %}
+    {% endunless %}
   {% endfor %}
-
-  {% for main in main_categories %}
-    <p><strong>📂 {{ main }}</strong></p>
-    <ul class="nav-subfolder">
-      
-      {% comment %} Show root-level files {% endcomment %}
-      {% assign has_root_files = false %}
-      {% for page in all_pages %}
-        {% if page.path contains 'category/' and page.path contains main %}
-          {% assign parts = page.path | split: '/' %}
-          {% if parts.size == 2 and page.name != "index.md" %}
-            {% unless has_root_files %}
-              <li><span>📄 Root Files</span>
-                <ul class="nav-files">
-                  {% assign has_root_files = true %}
-            {% endunless %}
-                  <li><a href="{{ page.url }}">{{ page.title | default: page.name }}</a></li>
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-      {% if has_root_files %}
+  
+  {% for main in categories %}
+    <ul>
+      <li>
+        <span class="folder-icon">📂</span> {{ main }}
+        <ul>
+          {% comment %} Get all pages in this category {% endcomment %}
+          {% assign cat_pages = all_pages | where_exp: "p", "p.path contains main" %}
+          
+          {% comment %} Group by subcategory if exists {% endcomment %}
+          {% assign subcats = "" | split: "" %}
+          {% for page in cat_pages %}
+            {% assign parts = page.path | split: '/' %}
+            {% if parts[2] %}
+              {% assign sub = parts[2] %}
+              {% unless subcats contains sub %}
+                {% assign subcats = subcats | push: sub %}
+              {% endunless %}
+            {% endif %}
+          {% endfor %}
+          
+          {% if subcats.size > 0 %}
+            {% for sub in subcats %}
+              <li>
+                <span class="folder-icon">📁</span> {{ sub }}
+                <ul>
+                  {% for page in cat_pages %}
+                    {% if page.path contains sub and page.name != "index.md" %}
+                      <li><a href="{{ page.url }}">{{ page.title | default: page.name }}</a></li>
+                    {% endif %}
+                  {% endfor %}
                 </ul>
               </li>
-      {% endif %}
-      
-      {% comment %} Show subcategories {% endcomment %}
-      {% assign subcategories = "" | split: "" %}
-      {% for page in all_pages %}
-        {% if page.path contains 'category/' and page.path contains main %}
-          {% assign parts = page.path | split: '/' %}
-          {% if parts[2] %}
-            {% assign sub = parts[2] %}
-            {% unless subcategories contains sub %}
-              {% assign subcategories = subcategories | push: sub %}
-            {% endunless %}
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-
-      {% for sub in subcategories %}
-        <li>
-          <span>📁 {{ sub }}</span>
-          <ul class="nav-files">
-            {% for page in all_pages %}
-              {% if page.path contains 'category/' and page.path contains main and page.path contains sub %}
-                {% assign parts = page.path | split: '/' %}
-                {% if parts.size >= 3 and page.name != "index.md" %}
-                  <li><a href="{{ page.url }}">{{ page.title | default: page.name }}</a></li>
-                {% endif %}
-              {% endif %}
             {% endfor %}
-          </ul>
-        </li>
-      {% endfor %}
+          {% endif %}
+          
+          {% comment %} Show root-level pages {% endcomment %}
+          {% for page in cat_pages %}
+            {% assign parts = page.path | split: '/' %}
+            {% if parts.size == 2 and page.name != "index.md" %}
+              <li><a href="{{ page.url }}">{{ page.title | default: page.name }}</a></li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </li>
     </ul>
   {% endfor %}
 </div>
