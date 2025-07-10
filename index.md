@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "inde"
+title: "index"
 ---
 
 {% include main_menu.html %}
@@ -15,6 +15,8 @@ title: "inde"
     </li>
   {% endfor %}
 </ul>
+
+<!-- trigger build -->
 
 
 
