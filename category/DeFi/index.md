@@ -6,5 +6,5 @@ permalink: /DeFi/
 
 # decentralized finance ( DeFi )
 
-{% include category_menu.html %}
+
 
