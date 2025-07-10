@@ -1,0 +1,86 @@
+# 🧭 Nav
+
+<style>
+  .nav-folder {
+    margin-top: 1em;
+    font-family: monospace;
+    color: #9f9;
+  }
+  .toggle-btn {
+    cursor: pointer;
+    color: #6f6;
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  .nav-subfolder,
+  .nav-files {
+    margin-left: 1em;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".toggle-btn").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        const target = btn.nextElementSibling;
+        if (target.style.display === "none") {
+          target.style.display = "block";
+          btn.textContent = "▾";
+        } else {
+          target.style.display = "none";
+          btn.textContent = "▸";
+        }
+      });
+    });
+  });
+</script>
+
+<div class="nav-folder">
+
+  {% assign all_pages = site.pages | where_exp: "p", "p.path contains 'category/'" %}
+  
+  {% assign categories = {} %}
+  {% for page in all_pages %}
+    {% assign parts = page.path | split: '/' %}
+    {% assign main = parts[1] %}
+    {% assign sub = parts[2] %}
+    {% assign subsub = parts[3] %}
+    
+    {% if subsub %}
+      {% capture key %}{{ main }}/{{ sub }}{% endcapture %}
+      {% assign _ = categories[key] = categories[key] | default: "" | append: page.path | append: "||" %}
+    {% elsif sub %}
+      {% capture key %}{{ main }}{% endcapture %}
+      {% assign _ = categories[key] = categories[key] | default: "" | append: page.path | append: "||" %}
+    {% endif %}
+  {% endfor %}
+
+  {% assign top_level = categories | keys | map: "split" | map: first | uniq | sort %}
+
+  {% for main in top_level %}
+    <p><strong>📂 <span style="color:#9f9;">{{ main }}</span></strong></p>
+
+    {% assign second_level_keys = categories | keys | where_exp: "k", "k contains '" | append: main | append: "/'" | sort %}
+    <ul class="nav-subfolder">
+      {% for key in second_level_keys %}
+        {% assign parts = key | split: '/' %}
+        {% assign sub = parts[1] %}
+        {% assign page_paths = categories[key] | split: '||' | sort %}
+        {% assign page_count = page_paths | size %}
+
+        <li>
+          <span class="toggle-btn">▾</span>
+          <span>📁 <strong>{{ sub }} ({{ page_count }})</strong></span>
+          <ul class="nav-files">
+            {% for path in page_paths %}
+              {% assign page = site.pages | where: "path", path | first %}
+              {% if page and page.name != "index.md" %}
+                <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+</div>
