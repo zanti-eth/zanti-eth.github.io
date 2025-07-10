@@ -5,7 +5,7 @@ title: "index"
 
 # 🏦 CEXes
 
-  - ![alt text](<Screenshot 2024-02-15 104723-1.png>)
+  - ![alt text](<./assets/images/Screenshot 2024-02-15 104723-1.png>)
 
 # 📰 Latest Posts
 
