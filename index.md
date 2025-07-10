@@ -3,7 +3,7 @@ layout: default
 title: "index"
 ---
 
-# :bank: CEXes
+# 🏦 CEXes
 
   - ![alt text](<Screenshot 2024-02-15 104723-1.png>)
 
