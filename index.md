@@ -3,13 +3,9 @@ layout: default
 title: "index"
 ---
 
-{% include menu.html %}
+# :bank: CEXes
 
-<ul>
-  {% for p in site.pages %}
-    <li>{{ p.path }}</li>
-  {% endfor %}
-</ul>
+  - ![alt text](<Screenshot 2024-02-15 104723-1.png>)
 
 # 📰 Latest Posts
 
