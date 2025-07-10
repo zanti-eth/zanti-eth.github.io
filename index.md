@@ -22,7 +22,6 @@ title: "index"
   {% endfor %}
 </ul>
 
-<!-- force rebuild -->
 
 
 
