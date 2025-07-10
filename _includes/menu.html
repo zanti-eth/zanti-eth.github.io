@@ -64,7 +64,7 @@
       {% for key in second_level_keys %}
         {% assign parts = key | split: '/' %}
         {% assign sub = parts[1] %}
-        {% assign page_paths = (categories[key] | default: "") | split: '||' | sort %}
+        {% assign page_paths = categories[key] | split: '||' | sort %}
         {% assign page_count = page_paths | size %}
 
         <li>
