@@ -3,8 +3,6 @@ layout: default
 title: "index"
 ---
 
-{% include main_menu.html %}
-
 # 📰 Latest Posts
 
 <ul>
@@ -16,6 +14,16 @@ title: "index"
   {% endfor %}
 </ul>
 
+# 📂 All Content
+
+<ul style="padding-left:20px; list-style-type:none;">
+  {% assign all_pages = site.pages | where_exp: "p", "p.path contains 'category/'" | sort: "title" %}
+  {% for page in all_pages %}
+    {% unless page.path contains '/index.md' %}
+      <li>• <a href="{{ page.url }}">{{ page.title | default: page.name }}</a></li>
+    {% endunless %}
+  {% endfor %}
+</ul>
 
 
 
