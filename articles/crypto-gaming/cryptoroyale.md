@@ -37,9 +37,6 @@ date: 2025-07-11
    .toc a.active {
     font-weight: bold;
     color: #fff;
-    background: #00ccff;
-    padding: 2px 6px;
-    border-radius: 4px;
   }
 
   /* Hide ToC on small screens */
