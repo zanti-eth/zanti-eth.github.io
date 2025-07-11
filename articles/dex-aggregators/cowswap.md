@@ -4,6 +4,7 @@ description: Learn what CoW Swap is, how it works, and why it's revolutionizing 
 tags: [cowswap, gnosis, mev, batch auctions, defi]
 keywords: cowswap, gnosis ecosystem, mev protection, dex aggregator, defi trading tools
 layout: default
+permalink: /cowswap/
 ---
 
 # 🐮 What is CoW Swap? The MEV-Protected DEX Aggregator You Need to Know

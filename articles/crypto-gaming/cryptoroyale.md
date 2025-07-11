@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Crypto Royale
-permalink: /crypto-gaming/cryptoroyale/
+permalink: /cryptoroyale/
 ---
 
 # Crypto Royale

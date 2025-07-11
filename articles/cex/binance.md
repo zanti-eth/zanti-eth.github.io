@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Binance Exchange Guide
-permalink: /cex/binance/
+permalink: /binance/
 ---
 
 # 📈 The Ultimate Guide to Binance: From Sign-Up to Trading Like a Pro  
