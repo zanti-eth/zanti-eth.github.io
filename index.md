@@ -16,12 +16,12 @@ title: "index"
 
    - <a href="/binance/">
   <img src="/assets/images/binance.svg" style="height: 40px; vertical-align: middle; margin-right: 5px;" alt="Binance" />
-</a>
-   - Coinbase
-   - MEXC
-   - Gate.io
-   - KuCoin
-   - Kraken
+</a>  
+   - Coinbase  
+   - MEXC  
+   - Gate.io  
+   - KuCoin  
+   - Kraken  
     
 ### 🏦 DEX
 
