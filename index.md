@@ -7,24 +7,31 @@ title: "index"
 <div style="display: flex; gap: 20px;">
   <div style="flex: 1;">
 
-# Trading Platforms
+<h1>Trading Platforms</h1>
 
-## 🏦 CEX
+<h2>🏦 CEX</h2>
 
-- First item
-- Second item
-- Third item
-    - Indented item
-    - Indented item
-- Fourth item
+<ul>
+  <li>First item</li>
+  <li>Second item</li>
+  <li>Third item
+    <ul>
+      <li>Indented item</li>
+      <li>Indented item</li>
+    </ul>
+  </li>
+  <li>Fourth item</li>
+</ul>
 
-## 🏦 DEX
+<h2>🏦 DEX</h2>
 
-# Crypto Gaming
+<h1>Crypto Gaming</h1>
 
-## Browser games
+<h2>Browser games</h2>
 
-- [Crypto Royale](./articles/crypto-gaming/cryptoroyale.md)
+<ul>
+  <li><a href="./articles/crypto-gaming/cryptoroyale.md">Crypto Royale</a></li>
+</ul>
 
   </div>
 
