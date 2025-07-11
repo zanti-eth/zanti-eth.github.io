@@ -6,10 +6,10 @@ title: "index"
 # 📃 Crypto resources, tools, platforms, research and analysis articles for the 0BTC Life
 
 <div class="dropdown-section">
-  <h2 class="dropdown-header">
-    <span class="dropdown-arrow"></span> <!-- Empty container -->
-    <strong>💸 Trading Platforms</strong>
-  </h2>
+  <div class="dropdown-header">
+  <span class="dropdown-arrow">▶</span>
+  <span class="dropdown-title">Trading</span>
+</div>
   <div class="dropdown-content" markdown="1">
 
 ### 🏦 CEX

@@ -81,40 +81,24 @@ p a {
 }
 
 .dropdown-arrow {
+  display: inline-block;
   margin-right: 10px;
-  transition: transform 0.2s ease;
+  transition: transform 0.3s ease;
 }
 
 .dropdown-content {
-  padding: 0 1.2rem;
-  max-height: 0;
+  height: 0;
   overflow: hidden;
-  transition: all 0.3s ease;
+  transition: height 0.3s ease;
+  padding: 0 1.2rem;
 }
 
 /* Open State */
-.dropdown-section.open .dropdown-content {
-  max-height: 1000px;
-  padding: 1.2rem;
-}
+
 
 .dropdown-section.open .dropdown-arrow {
   transform: rotate(90deg);
 }
 
-/* Arrow Icons */
-.dropdown-section.open .dropdown-arrow::before {
-  content: "▶️";
-}
 
-.dropdown-section:not(.open) .dropdown-arrow::before {
-  content: "▶️";
-}
-
-.dropdown-arrow::before {
-  content: "▶️";
-  display: inline-block;
-  margin-right: 10px;
-  transition: transform 0.2s ease;
-}
 
