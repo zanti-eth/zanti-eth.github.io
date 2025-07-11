@@ -11,15 +11,16 @@ title: "index"
 
 <div class="dropdown-section">
   <h2 class="dropdown-header">
-    <span class="dropdown-arrow">▶️</span> Trading Platforms
+    <span class="dropdown-arrow"></span> 
+    <strong>Trading Platforms</strong>
   </h2>
-  <div class="dropdown-content">
-    ## 🏦 CEX
+  <div class="dropdown-content" markdown="1">
+    ### 🏦 CEX
     - Binance
     - Coinbase
     - Kraken
     
-    ## 🏦 DEX
+    ### 🏦 DEX
     - Uniswap
     - PancakeSwap
     - dYdX
