@@ -3,6 +3,12 @@ layout: default
 title: Crypto Royale.one Guide
 description: Complete beginner's guide to CryptoRoyale.one — earn ROY tokens on Avalanche, Polygon, and Harmony ONE.
 permalink: /cryptoroyale/
+image: /assets/images/cryptoroyale.svg
+tags: [crypto, gaming, defi]
+robots: index, follow
+author: zanti
+lang: en
+date: 2025-07-11
 ---
 
 <style>
@@ -27,6 +33,21 @@ permalink: /cryptoroyale/
   .toc a:hover {
     text-decoration: underline;
   }
+
+   .toc a.active {
+    font-weight: bold;
+    color: #fff;
+    background: #00ccff;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+
+  /* Hide ToC on small screens */
+@media (max-width: 768px) {
+  .toc {
+    display: none;
+  }
+}
 </style>
 
 <div class="toc">
@@ -129,3 +150,25 @@ Switch your wallet to one of the networks before claiming.
 ---
 
 > ✍️ *Last updated: {{ site.time | date: "%Y-%m-%d" }}*
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const tocLinks = document.querySelectorAll(".toc a");
+
+    function updateActiveLink() {
+      let current = null;
+      tocLinks.forEach(link => {
+        const section = document.querySelector(link.getAttribute("href"));
+        if (section && section.getBoundingClientRect().top <= 100) {
+          current = link;
+        }
+      });
+
+      tocLinks.forEach(link => link.classList.remove("active"));
+      if (current) current.classList.add("active");
+    }
+
+    window.addEventListener("scroll", updateActiveLink);
+    updateActiveLink();
+  });
+</script>
