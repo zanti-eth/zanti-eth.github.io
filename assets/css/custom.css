@@ -76,13 +76,12 @@ p a {
 .dropdown-header {
   padding: 0.8rem 1.2rem;
   cursor: pointer;
-  background: #070707;
   display: flex;
   align-items: center;
 }
 
 .dropdown-header:hover {
-  background: #eaecef;
+  
 }
 
 .dropdown-arrow {
@@ -109,7 +108,7 @@ p a {
 
 /* Arrow Icons */
 .dropdown-section.open .dropdown-arrow::before {
-  content: "⬇️";
+  content: "⬇▶️";
   transform: none; /* Remove rotation if previously set */
 }
 

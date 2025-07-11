@@ -20,6 +20,7 @@ title: "index"
 
    - [Binance](./articles/cex/binance.md)
    - Coinbase
+   - MEXC
     
 ### 🏦 DEX
 
