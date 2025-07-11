@@ -7,20 +7,23 @@ title: "index"
 <div style="display: flex; gap: 20px;">
   <div style="flex: 1;">
 
-<h1>Pages</h1>
+<h1>📃 All Articles</h1>
 
 <div class="dropdown-section">
   <h2 class="dropdown-header">
     <span class="dropdown-arrow"></span> <!-- Empty container -->
-    <strong>Trading Platforms</strong>
+    <strong>💸 Trading Platforms</strong>
   </h2>
   <div class="dropdown-content" markdown="1">
 
 ### 🏦 CEX
 
-   - [Binance](./articles/cex/binance.md)
+   - <img src="/assets/images/binance.svg" width="20" height="20" alt="Binance" style="vertical-align:middle; margin-right:5px;" /> [Binance](./articles/cex/binance.md)
    - Coinbase
-   - 
+   - MEXC
+   - Gate.io
+   - KuCoin
+   - Kraken
     
 ### 🏦 DEX
 
@@ -28,12 +31,16 @@ title: "index"
   - PancakeSwap
   - dYdX
 
+### 🏦 DEX Aggregators
+
+  - [CoWSwap](./articles/dex-aggregators/cowswap.md)
+
   </div>
 </div>
 
-<h2>Crypto Gaming</h2>
+<h2>🎮 Crypto Gaming</h2>
 
-<h3>Browser games</h3>
+<h3>☁️ Browser games</h3>
 
 <ul>
   <li><a href="./articles/crypto-gaming/cryptoroyale.md">Crypto Royale</a></li>
