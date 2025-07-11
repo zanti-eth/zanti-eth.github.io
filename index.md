@@ -9,12 +9,12 @@ title: "index"
 
 <h1>Pages</h1>
 
-<h2>Trading Platforms</h2>
+## - Trading Platforms
 
 <h3>🏦 CEX</h3>
 
 <ul>
-  <li>First item</li>
+  <li>[Binance](./articles/cex/binance.md)</li>
   <li>Second item</li>
   <li>Third item
     <ul>
