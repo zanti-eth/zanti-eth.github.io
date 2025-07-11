@@ -3,7 +3,9 @@ layout: default
 title: "index"
 ---
 
-# 🏦 CEXes
+# Trading Platforms
+
+## 🏦 CEX
 
 - First item
 - Second item
@@ -11,6 +13,14 @@ title: "index"
     - Indented item
     - Indented item
 - Fourth item
+
+## 🏦 DEX
+
+# Crypto Gaming
+
+## Browser games
+
+- [Crypto Royale](./articles/crypto-gaming/cryptoroyale.md)
 
 # 📰 Latest Posts
 
