@@ -15,12 +15,13 @@ title: "index"
     <strong>Trading Platforms</strong>
   </h2>
   <div class="dropdown-content" markdown="1">
-    ### 🏦 CEX
+
+### 🏦 CEX
     - Binance
     - Coinbase
     - Kraken
     
-    ### 🏦 DEX
+### 🏦 DEX
     - Uniswap
     - PancakeSwap
     - dYdX
