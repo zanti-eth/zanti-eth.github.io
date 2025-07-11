@@ -87,6 +87,46 @@
   }
 </script>
 
+<div id="installBanner" class="install-banner" style="display: none;">
+  <img src="/icons/icon-192.png" alt="0BTC Life Logo" class="banner-logo">
+  <div class="banner-text">
+    <strong>0BTC Life</strong><br>
+    <span>Add to homescreen</span>
+  </div>
+  <button id="installButton">Get the App</button>
+  <span id="closeBanner">×</span>
+</div>
+
+<script>
+  let deferredPrompt;
+
+  window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+
+    // Show the banner
+    document.getElementById('installBanner').style.display = 'flex';
+  });
+
+  document.getElementById('installButton').addEventListener('click', async () => {
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+      const { outcome } = await deferredPrompt.userChoice;
+      if (outcome === 'accepted') {
+        console.log('✅ User accepted install');
+      } else {
+        console.log('❌ User dismissed install');
+      }
+      deferredPrompt = null;
+      document.getElementById('installBanner').style.display = 'none';
+    }
+  });
+
+  document.getElementById('closeBanner').addEventListener('click', () => {
+    document.getElementById('installBanner').style.display = 'none';
+  });
+</script>
+
 
   </body>
 </html>

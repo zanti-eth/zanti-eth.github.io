@@ -123,5 +123,50 @@ p a {
   transform: rotate(90deg);
 }
 
+.install-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  border-top: 2px solid #24e60b;
+}
+
+.banner-logo {
+  height: 48px;
+  width: 48px;
+  margin-right: 1rem;
+  border-radius: 8px;
+}
+
+.banner-text {
+  flex: 1;
+  font-size: 0.95rem;
+  line-height: 1.2;
+}
+
+#installButton {
+  background: #24e60b;
+  color: #000;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+#closeBanner {
+  margin-left: 1rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
 
 
