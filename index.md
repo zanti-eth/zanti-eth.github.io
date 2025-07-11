@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "indexx"
+title: "index"
 ---
 
 # 📃 Crypto resources, tools, platforms, research and analysis articles for the 0BTC Life

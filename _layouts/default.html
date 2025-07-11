@@ -100,30 +100,44 @@
 <script>
   let deferredPrompt;
 
+  const banner = document.getElementById('installBanner');
+  const installBtn = document.getElementById('installButton');
+  const closeBtn = document.getElementById('closeBanner');
+
+  // Show the banner only if user hasn’t installed or dismissed it
+  const userDismissed = localStorage.getItem('pwaBannerDismissed');
+  const userInstalled = localStorage.getItem('pwaInstalled');
+
   window.addEventListener('beforeinstallprompt', (e) => {
     e.preventDefault();
     deferredPrompt = e;
 
-    // Show the banner
-    document.getElementById('installBanner').style.display = 'flex';
-  });
-
-  document.getElementById('installButton').addEventListener('click', async () => {
-    if (deferredPrompt) {
-      deferredPrompt.prompt();
-      const { outcome } = await deferredPrompt.userChoice;
-      if (outcome === 'accepted') {
-        console.log('✅ User accepted install');
-      } else {
-        console.log('❌ User dismissed install');
-      }
-      deferredPrompt = null;
-      document.getElementById('installBanner').style.display = 'none';
+    if (!userDismissed && !userInstalled) {
+      banner.style.display = 'flex';
     }
   });
 
-  document.getElementById('closeBanner').addEventListener('click', () => {
-    document.getElementById('installBanner').style.display = 'none';
+  installBtn.addEventListener('click', async () => {
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+
+      const { outcome } = await deferredPrompt.userChoice;
+
+      if (outcome === 'accepted') {
+        console.log('✅ User installed app');
+        localStorage.setItem('pwaInstalled', 'true');
+        banner.style.display = 'none';
+      } else {
+        console.log('❌ User dismissed install');
+      }
+
+      deferredPrompt = null;
+    }
+  });
+
+  closeBtn.addEventListener('click', () => {
+    banner.style.display = 'none';
+    localStorage.setItem('pwaBannerDismissed', 'true');
   });
 </script>
 
