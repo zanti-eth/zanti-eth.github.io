@@ -64,16 +64,19 @@ p a {
 }
 
 /* ===== Dropdown Styles ===== */
+
+
+
 .dropdown-section {
   margin: 1rem 0;
-  border: 1px solid #e1e4e8;
+  border: 1px solid #0a0a0a;
   border-radius: 6px;
 }
 
 .dropdown-header {
   padding: 0.8rem 1.2rem;
   cursor: pointer;
-  background: #f6f8fa;
+  background: #070707;
   display: flex;
   align-items: center;
 }
