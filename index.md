@@ -18,7 +18,9 @@ title: "index"
 
 ### 🏦 CEX
 
-   - <a href="./articles/cex/binance.md"><img src="/assets/images/binance.svg" width="40" height="80" alt="Binance" style="vertical-align:middle; margin-right:5px;" /></a>
+   - <a href="./articles/cex/binance.md">
+  <img src="/assets/images/binance.svg" style="height: 80px; vertical-align: middle; margin-right: 5px;" alt="Binance" />
+</a>
    - Coinbase
    - MEXC
    - Gate.io
