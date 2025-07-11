@@ -125,7 +125,8 @@ p a {
 
 .install-banner {
   position: fixed;
-  bottom: 0;
+  top: 0;
+  bottom: auto;
   left: 0;
   right: 0;
   background: #111;
