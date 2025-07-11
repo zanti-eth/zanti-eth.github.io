@@ -14,11 +14,11 @@ title: "index"
 
 ### 🏦 CEX
 
-   - <a href="/binance/">
+  <a href="/binance/">
   <img src="/assets/images/binance.svg" style="height: 40px; vertical-align: middle; margin-right: 5px;" alt="Binance crypto exchange Bitcoin Ethereum trading platform best in the world" /> --- Learn everything about Binance, the world’s leading cryptocurrency exchange — features, fees, security, and how to get started trading crypto.
 </a>  
 
-   - <a href="/coinbase/">
+  <a href="/coinbase/">
   <img src="/assets/images/coinbase.svg" style="height: 40px; vertical-align: middle; margin-right: 5px;" alt="Coinbase app logo for crypto trading" /> --- Discover how to use Coinbase, the most beginner-friendly crypto platform — buy, sell, and store digital assets with ease and security.
 </a>  
 
@@ -43,9 +43,7 @@ title: "index"
 
 ## 🎮 Crypto Gaming
 
-### ☁️ Browser games
-
- - <a href="/cryptoroyale/"><img src="/assets/images/cryptoroyale.svg" style="height: 40px; vertical-align: middle; margin-right: 5px;"  alt="CryptoRoyale.one game logo with ROY token reward system" /> --- Explore CryptoRoyale.one, the free-to-play battle royale crypto game where skill meets strategy — earn ROY tokens by surviving the arena.
+<a href="/cryptoroyale/"><img src="/assets/images/cryptoroyale.svg" style="height: 40px; vertical-align: middle; margin-right: 5px;"  alt="CryptoRoyale.one game logo with ROY token reward system" /> --- Explore CryptoRoyale.one, the free-to-play battle royale crypto game where skill meets strategy — earn ROY tokens by surviving the arena.
    </a>
 
 
