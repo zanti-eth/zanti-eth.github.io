@@ -3,6 +3,10 @@ layout: default
 title: "index"
 ---
 
+
+<div style="display: flex; gap: 20px;">
+  <div style="flex: 1;">
+
 # Trading Platforms
 
 ## 🏦 CEX
@@ -22,7 +26,10 @@ title: "index"
 
 - [Crypto Royale](./articles/crypto-gaming/cryptoroyale.md)
 
-# 📰 Latest Posts
+  </div>
+
+  <div style="flex: 1;">
+    # 📰 Latest Posts
 
 <ul>
   {% for post in site.posts %}
@@ -32,6 +39,13 @@ title: "index"
     </li>
   {% endfor %}
 </ul>
+  </div>
+</div>
+
+
+
+
+
 
 
 
