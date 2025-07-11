@@ -8,7 +8,7 @@ title: "index"
 <div class="dropdown-section">
   <div class="dropdown-header">
   <span class="dropdown-arrow">▶</span>
-  <span class="dropdown-title">Trading</span>
+  <span class="dropdown-title"><h2>Trading</h2></span>
 </div>
   <div class="dropdown-content" markdown="1">
 
