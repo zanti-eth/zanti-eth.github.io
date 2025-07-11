@@ -126,7 +126,6 @@ p a {
 .install-banner {
   position: fixed;
   top: 0;
-  bottom: auto;
   left: 0;
   right: 0;
   background: #111;
@@ -134,9 +133,9 @@ p a {
   display: flex;
   align-items: center;
   padding: 1rem;
-  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
   z-index: 9999;
-  border-top: 2px solid #24e60b;
+  border-bottom: 2px solid #24e60b;
 }
 
 .banner-logo {
