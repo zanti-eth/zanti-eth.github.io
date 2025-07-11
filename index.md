@@ -18,7 +18,7 @@ title: "index"
 
 ### 🏦 CEX
 
-   - <img src="/assets/images/binance.svg" width="20" height="20" alt="Binance" style="vertical-align:middle; margin-right:5px;" /> [Binance](./articles/cex/binance.md)
+   - <a href="./articles/cex/binance.md"><img src="/assets/images/binance.svg" width="40" height="40" alt="Binance" style="vertical-align:middle; margin-right:5px;" /></a>
    - Coinbase
    - MEXC
    - Gate.io
@@ -33,7 +33,7 @@ title: "index"
 
 ### 🏦 DEX Aggregators
 
-  - [CoWSwap](./articles/dex-aggregators/cowswap.md)
+   - <a href="./articles/dex-aggregators/cowswap.md"><img src="/assets/images/cow.svg" width="40" height="80" alt="CoWSwap" style="vertical-align:middle; margin-right:5px;" /></a>
 
   </div>
 </div>
