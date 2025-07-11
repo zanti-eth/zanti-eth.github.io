@@ -15,7 +15,7 @@ title: "index"
 ### 🏦 CEX
 
    - <a href="/binance/">
-  <img src="/assets/images/binance.svg" style="height: 40px; vertical-align: middle; margin-right: 5px;" alt="Binance" />
+  <img src="/assets/images/binance.svg" style="height: 40px; vertical-align: middle; margin-right: 5px;" alt="Binance" /> Find out why Binance is the number 1 crypto exchange in the World
 </a>  
    - Coinbase  
    - MEXC  
