@@ -3,11 +3,7 @@ layout: default
 title: "index"
 ---
 
-
-<div style="display: flex; gap: 20px;">
-  <div style="flex: 1;">
-
-<h1>📃 All Articles</h1>
+# 📃 Crypto resources, tools, platforms, research and analysis articles for the 0BTC Life
 
 <div class="dropdown-section">
   <h2 class="dropdown-header">
@@ -41,29 +37,12 @@ title: "index"
   </div>
 </div>
 
-<h2>🎮 Crypto Gaming</h2>
+## 🎮 Crypto Gaming
 
-<h3>☁️ Browser games</h3>
+### ☁️ Browser games
 
-<ul>
-  <li><a href="/cryptoroyale/">Crypto Royale</a></li>
-</ul>
-
-  </div>
-
-  <div style="flex: 1;">
-    <h1> 📰 Latest Posts</h1>
-
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      <small>({{ post.date | date: "%Y-%m-%d" }})</small>
-    </li>
-  {% endfor %}
-</ul>
-  </div>
-</div>
+ - <a href="/cryptoroyale/"><img src="/assets/images/cryptoroyale.svg" style="height: 40px; vertical-align: middle; margin-right: 5px;"  alt="CryptoRoyale" />
+   </a>
 
 
 
