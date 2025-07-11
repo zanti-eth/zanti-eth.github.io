@@ -18,7 +18,7 @@ title: "index"
 
 ### 🏦 CEX
 
-   - <a href="./articles/cex/binance.md">
+   - <a href="/articles/cex/binance.md">
   <img src="/assets/images/binance.svg" style="height: 40px; vertical-align: middle; margin-right: 5px;" alt="Binance" />
 </a>
    - Coinbase
@@ -35,7 +35,8 @@ title: "index"
 
 ### 🏦 DEX Aggregators
 
-   - <a href="./articles/dex-aggregators/cowswap.md"><img src="/assets/images/cow.svg" width="40" height="80" alt="CoWSwap" style="vertical-align:middle; margin-right:5px;" /></a>
+   - <a href="/articles/dex-aggregators/cowswap.md"><img src="/assets/images/cow.svg" style="height: 40px; vertical-align: middle; margin-right: 5px;"  alt="CoWSwap" />
+   </a>
 
   </div>
 </div>
