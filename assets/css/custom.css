@@ -80,10 +80,6 @@ p a {
   align-items: center;
 }
 
-.dropdown-header:hover {
-  
-}
-
 .dropdown-arrow {
   margin-right: 10px;
   transition: transform 0.2s ease;
@@ -108,8 +104,7 @@ p a {
 
 /* Arrow Icons */
 .dropdown-section.open .dropdown-arrow::before {
-  content: "⬇▶️";
-  transform: none; /* Remove rotation if previously set */
+  content: "▶️";
 }
 
 .dropdown-section:not(.open) .dropdown-arrow::before {
