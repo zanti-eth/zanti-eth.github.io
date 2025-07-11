@@ -6,7 +6,7 @@ permalink: /cex/binance/
 
 # 📈 The Ultimate Guide to Binance: From Sign-Up to Trading Like a Pro  
 
-*"Binance isn’t just a crypto exchange—it’s a financial universe. Whether you're here to trade, invest, or just HODL, this guide will turn you from a newbie into a savvy user."*  
+*"Binance isn’t just a crypto exchange—it’s a financial universe. Whether you're here to trade, invest, or just HODL, this guide will turn you from a newbie into a savvy user"*  
 
 ---
 
