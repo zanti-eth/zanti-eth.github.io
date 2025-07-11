@@ -16,16 +16,17 @@ title: "index"
   </h2>
   <div class="dropdown-content" markdown="1">
 
-  ### 🏦 CEX
+### 🏦 CEX
 
    - [Binance](./articles/cex/binance.md)
    - Coinbase
    - Kraken
     
-  ### 🏦 DEX
-    - Uniswap
-    - PancakeSwap
-    - dYdX
+### 🏦 DEX
+
+  - Uniswap
+  - PancakeSwap
+  - dYdX
 
   </div>
 </div>
