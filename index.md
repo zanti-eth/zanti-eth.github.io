@@ -43,7 +43,7 @@ title: "index"
 
 ## 🎮 Crypto Gaming
 
-&nbsp;&nbsp;&nbsp;<a href="/cryptoroyale/"><img src="/assets/images/cryptoroyale.svg" style="height: 40px; vertical-align: middle; margin-right: 5px;"  alt="CryptoRoyale.one game logo with ROY token reward system" /><br><br>>Explore CryptoRoyale.one, the free-to-play battle royale crypto game where skill meets strategy — earn ROY tokens by surviving the arena.
+&nbsp;&nbsp;&nbsp;<a href="/cryptoroyale/"><img src="/assets/images/cryptoroyale.svg" style="height: 40px; vertical-align: middle; margin-right: 5px;"  alt="CryptoRoyale.one game logo with ROY token reward system" /><br><br>Explore CryptoRoyale.one, the free-to-play battle royale crypto game where skill meets strategy — earn ROY tokens by surviving the arena.
    </a>
 
 
