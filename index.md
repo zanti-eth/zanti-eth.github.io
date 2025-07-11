@@ -7,9 +7,11 @@ title: "index"
 <div style="display: flex; gap: 20px;">
   <div style="flex: 1;">
 
-<h1>Trading Platforms</h1>
+<h1>Pages</h1>
 
-<h2>🏦 CEX</h2>
+<h2>Trading Platforms</h2>
+
+<h3>🏦 CEX</h3>
 
 <ul>
   <li>First item</li>
@@ -23,11 +25,11 @@ title: "index"
   <li>Fourth item</li>
 </ul>
 
-<h2>🏦 DEX</h2>
+<h3>🏦 DEX</h3>
 
-<h1>Crypto Gaming</h1>
+<h2>Crypto Gaming</h2>
 
-<h2>Browser games</h2>
+<h3>Browser games</h3>
 
 <ul>
   <li><a href="./articles/crypto-gaming/cryptoroyale.md">Crypto Royale</a></li>
@@ -36,7 +38,7 @@ title: "index"
   </div>
 
   <div style="flex: 1;">
-    # 📰 Latest Posts
+    <h1> 📰 Latest Posts</h1>
 
 <ul>
   {% for post in site.posts %}
