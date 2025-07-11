@@ -107,8 +107,17 @@ p a {
 /* Arrow Icons */
 .dropdown-section.open .dropdown-arrow::before {
   content: "⬇️";
+  transform: none; /* Remove rotation if previously set */
 }
 
 .dropdown-section:not(.open) .dropdown-arrow::before {
   content: "▶️";
 }
+
+.dropdown-arrow::before {
+  content: "▶️";
+  display: inline-block;
+  margin-right: 10px;
+  transition: transform 0.2s ease;
+}
+
