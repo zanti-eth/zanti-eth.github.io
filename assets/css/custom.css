@@ -62,3 +62,59 @@ a:hover {
 p a {
   font-weight: 500 !important;
 }
+
+/* Dropdown Styles */
+.dropdown-section {
+  margin: 1rem 0;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.dropdown-header {
+  padding: 0.8rem 1.2rem;
+  margin: 0;
+  cursor: pointer;
+  background-color: #f6f8fa;
+  display: flex;
+  align-items: center;
+  user-select: none; /* Prevent text selection */
+}
+
+.dropdown-header:hover {
+  background-color: #eaecef;
+}
+
+.dropdown-arrow {
+  margin-right: 10px;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.dropdown-content {
+  padding: 0 1.2rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+/* Opened State */
+.dropdown-section.open .dropdown-content {
+  max-height: 2000px; /* Arbitrary large value */
+  padding: 1.2rem;
+}
+
+.dropdown-section.open .dropdown-arrow {
+  transform: rotate(90deg);
+}
+
+/* Emoji toggle trick */
+.dropdown-section.open .dropdown-arrow::after {
+  content: "⬇️";
+  position: absolute;
+}
+
+.dropdown-section.open .dropdown-arrow::before {
+  content: "▶️";
+  visibility: hidden;
+}

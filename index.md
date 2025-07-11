@@ -9,23 +9,22 @@ title: "index"
 
 <h1>Pages</h1>
 
-<h2>▶️ Trading Platforms</h2>
-
-<h3>🏦 CEX</h3>
-
-<ul>
-  <li><a href="/articles/cex/binance.md">Binance</a></li>
-  <li>Second item</li>
-  <li>Third item
-    <ul>
-      <li>Indented item</li>
-      <li>Indented item</li>
-    </ul>
-  </li>
-  <li>Fourth item</li>
-</ul>
-
-<h3>🏦 DEX</h3>
+<div class="dropdown-section">
+  <h2 class="dropdown-header">
+    <span class="dropdown-arrow">▶️</span> Trading Platforms
+  </h2>
+  <div class="dropdown-content">
+    ## 🏦 CEX
+    - Binance
+    - Coinbase
+    - Kraken
+    
+    ## 🏦 DEX
+    - Uniswap
+    - PancakeSwap
+    - dYdX
+  </div>
+</div>
 
 <h2>Crypto Gaming</h2>
 
