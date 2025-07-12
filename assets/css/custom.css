@@ -187,8 +187,8 @@ p a {
   animation: slideDown 0.4s ease forwards;
 }
 
-body {
-  padding-top: 82px; /* Matches banner height (48px logo + 1rem padding ×2) */
+body.has-banner {
+  padding-top: 82px; /* Your banner height */
 }
 
 .install-banner {
