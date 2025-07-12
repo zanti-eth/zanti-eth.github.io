@@ -92,29 +92,52 @@ p a {
 
 .dropdown-section {
   margin: 1rem 0;
-  border: 1px solid #0a0a0a;
-  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05); /* transparent card */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.dropdown-section:hover {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
 }
 
 .dropdown-header {
-  padding: 0.8rem 1.2rem;
+  padding: 1rem 1.5rem;
   cursor: pointer;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.1rem;
 }
 
 .dropdown-arrow {
   display: inline-block;
-  margin-right: 10px;
   transition: transform 0.3s ease;
+}
+
+.dropdown-section.active .dropdown-arrow {
+  transform: rotate(90deg);
 }
 
 .dropdown-content {
   height: 0;
   overflow: hidden;
-  transition: height 0.3s ease;
-  padding: 0 1.2rem;
+  transition: height 0.4s ease;
+  padding: 0 1.5rem;
+  color: #f1f1f1;
+  font-size: 0.95rem;
 }
+
+.dropdown-section.active .dropdown-content {
+  padding: 1rem 1.5rem;
+}
+
 
 /* Open State */
 
@@ -122,6 +145,8 @@ p a {
 .dropdown-section.open .dropdown-arrow {
   transform: rotate(90deg);
 }
+
+/* PWA android app install banner */
 
 .install-banner {
   position: relative; /* ⬅️ replaces fixed */
