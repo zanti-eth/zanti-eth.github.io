@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "indexx"
+description: Resources, research, analysis & insights to navigate the crypto space with 0BTC
 ---
 
 # 📃 Crypto resources, tools, platforms, research and analysis articles for the 0BTC Life
@@ -67,6 +68,50 @@ title: "indexx"
 </div>
 
 
+<div class="dropdown-section">
+  <div class="dropdown-header">
+  <span class="dropdown-arrow">▶</span>
+  <span class="dropdown-title"><h2>Crypto Networks ( Chains )</h2></span>
+</div>
+  <div class="dropdown-content" markdown="1">
+
+
+
+&nbsp;&nbsp;&nbsp;<a href="/gnosis-chain/"><img src="/assets/images/gnosis-chain.svg" style="height: 40px; vertical-align: middle; margin-right: 5px;"  alt="Gnosis Chain logo" /><br><br>
+   </a>
+
+  </div>
+</div>
+
+<div class="dropdown-section">
+  <div class="dropdown-header">
+  <span class="dropdown-arrow">▶</span>
+  <span class="dropdown-title"><h2>Crypto Wallets</h2></span>
+</div>
+  <div class="dropdown-content" markdown="1">
+
+
+
+&nbsp;&nbsp;&nbsp;<a href="/rabby-wallet/"><img src="/assets/images/rabby.svg" style="height: 40px; vertical-align: middle; margin-right: 5px;"  alt="Rabby Wallet logo" /><br><br>
+   </a>
+
+  </div>
+</div>
+
+<div class="dropdown-section">
+  <div class="dropdown-header">
+  <span class="dropdown-arrow">▶</span>
+  <span class="dropdown-title"><h2>Crypto Ecosystems</h2></span>
+</div>
+  <div class="dropdown-content" markdown="1">
+
+
+
+&nbsp;&nbsp;&nbsp;<a href="/gnosis/"><img src="/assets/images/gnosis.svg" style="height: 40px; vertical-align: middle; margin-right: 5px;"  alt="Gnosis ecosystem logo" /><br><br>
+   </a>
+
+  </div>
+</div>
 
 
 

@@ -4,6 +4,7 @@ description: Discover what makes Gnosis Chain (formerly xDai) a powerful Ethereu
 keywords: gnosis chain, xDai, gnosis chain explained, ethereum sidechain, gnosis vs polygon, gnosis chain staking, gnosis safe, gnosis bridge
 tags: [gnosis, ethereum, sidechain, staking]
 layout: default
+permalink: /gnosischain/
 ---
 
 # 🌐 Gnosis Chain: The Scalable and Secure Ethereum Sidechain (formerly xDai)
