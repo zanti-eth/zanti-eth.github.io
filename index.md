@@ -8,7 +8,7 @@ title: "indexx"
 <div class="dropdown-section">
   <div class="dropdown-header">
   <span class="dropdown-arrow">▶</span>
-  <span class="dropdown-title"><h2>Trading</h2></span>
+  <span class="dropdown-title"><h2>Crypto Trading</h2></span>
 </div>
   <div class="dropdown-content" markdown="1">
 
@@ -50,10 +50,23 @@ title: "indexx"
   </div>
 </div>
 
-## 🎮 Crypto Gaming
+
+<div class="dropdown-section">
+  <div class="dropdown-header">
+  <span class="dropdown-arrow">▶</span>
+  <span class="dropdown-title"><h2>Crypto Gaming</h2></span>
+</div>
+  <div class="dropdown-content" markdown="1">
+
+
 
 &nbsp;&nbsp;&nbsp;<a href="/cryptoroyale/"><img src="/assets/images/cryptoroyale.svg" style="height: 40px; vertical-align: middle; margin-right: 5px;"  alt="CryptoRoyale.one game logo with ROY token reward system" /><br><br>Explore CryptoRoyale.one, the free-to-play battle royale crypto game where skill meets strategy — earn ROY tokens by surviving the arena.
    </a>
+
+  </div>
+</div>
+
+
 
 
 
