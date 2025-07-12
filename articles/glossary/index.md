@@ -2,6 +2,7 @@
 title: Crypto Glossary
 description: Explore the meaning behind the most popular crypto slang and terms.
 layout: default
+permalink: /glossary/
 ---
 
 # 📚 Crypto Glossary
