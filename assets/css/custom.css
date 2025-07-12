@@ -110,7 +110,8 @@ p a {
   cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 0.6rem; /* optional spacing between arrow and text */
   color: #fff;
   font-weight: 500;
   font-size: 1.1rem;
