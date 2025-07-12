@@ -172,7 +172,9 @@ p a {
 /* PWA android app install banner */
 
 .install-banner {
-  position: relative; /* ⬅️ replaces fixed */
+  position: fixed; /* ⬅️ Forces banner to stay at top */
+  top: 0; /* Stick to top edge */
+  left: 0; /* Full width */
   width: 100%;
   background: #111;
   color: #fff;
@@ -180,10 +182,14 @@ p a {
   align-items: center;
   padding: 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-  z-index: 1000;
+  z-index: 1000; /* Ensure it stays above other content */
   border-bottom: 2px solid #24e60b;
+  animation: slideDown 0.4s ease forwards;
 }
 
+body {
+  padding-top: 82px; /* Matches banner height (48px logo + 1rem padding ×2) */
+}
 
 .install-banner {
   animation: slideDown 0.4s ease forwards;
