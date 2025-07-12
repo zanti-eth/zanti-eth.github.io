@@ -9,7 +9,7 @@ description: Resources, research, analysis & insights to navigate the crypto spa
 <div class="dropdown-section">
   <div class="dropdown-header">
   <span class="dropdown-arrow">▶</span>
-  <span class="dropdown-title"><h2>Crypto Trading</h2></span>
+  <span class="dropdown-title">Crypto Trading</span>
 </div>
   <div class="dropdown-content" markdown="1">
 
