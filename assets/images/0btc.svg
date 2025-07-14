@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-2372.278 -1860.94 6342.68 5512.802" xmlns:bx="https://boxy-svg.com">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-2372.278 -1906.329 10688.66 5353.941" xmlns:bx="https://boxy-svg.com">
   <text style="font-family: &quot;Aguafina Script&quot;; font-size: 7476.64px; paint-order: fill; stroke-width: 0.931894px; white-space: pre; transform-origin: 1073.33px 2131.62px;" transform="matrix(-1.343667, 0, 0, -0.8025, 536.095703, -2361.781494)" x="-1068.4" y="3331.31">0</text>
   <g id="Layer_x0020_1" transform="matrix(1, 0, 0, 1, -1653.502808, -1850.88855)" style="">
     <g id="_1421344023328">
@@ -11,7 +11,11 @@
     <style bx:fonts="Aguafina Script">@import url(https://fonts.googleapis.com/css2?family=Aguafina+Script%3Aital%2Cwght%400%2C400&amp;display=swap);</style>
     <bx:export>
       <bx:file format="png" excluded="true"/>
-      <bx:file format="png" path="Untitled 2.png"/>
+      <bx:file format="png" path="Untitled 2.png" excluded="true"/>
+      <bx:file format="png" path="Untitled 3.png" excluded="true"/>
+      <bx:file format="png" path="Untitled 4.png"/>
     </bx:export>
+    <style bx:fonts="Ubuntu">@import url(https://fonts.googleapis.com/css2?family=Ubuntu%3Aital%2Cwght%400%2C300%3B0%2C400%3B0%2C500%3B0%2C700%3B1%2C300%3B1%2C400%3B1%2C500%3B1%2C700&amp;display=swap);</style>
   </defs>
+  <text style="font-family: Ubuntu; font-size: 2500px; font-style: italic; font-weight: 700; white-space: pre;" x="3605.85" y="2189.05">Łife</text>
 </svg>

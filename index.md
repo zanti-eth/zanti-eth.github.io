@@ -20,7 +20,7 @@ description: Resources, research, analysis & insights to navigate the crypto spa
     <span class="dropdown-arrow">›</span>
   </div>
   <div class="dropdown-content" markdown="1">
-  <div class="dropdown-content-inner">
+ 
 
 &nbsp;&nbsp;&nbsp;<a href="/binance/"><img src="/assets/images/binance.svg" style="height: 20px; vertical-align: middle; margin-right: 5px;"  alt="Binance crypto exchange Bitcoin Ethereum trading platform best in the world" /><br><br>Learn everything about Binance, the world’s leading cryptocurrency exchange — features, fees, security, and how to get started trading crypto.
    </a>
@@ -41,7 +41,6 @@ description: Resources, research, analysis & insights to navigate the crypto spa
    </a>
 
   </div>
-</div>
 </div>
      
     
