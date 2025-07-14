@@ -13,7 +13,12 @@ description: Resources, research, analysis & insights to navigate the crypto spa
   </div>
   <div class="dropdown-content" markdown="1">
 
-<h3 style="text-align:center;">🏦 Centralized Exchanges (CEX)</h3>
+<div class="dropdown-section">
+  <div class="dropdown-header">
+    <h2>Centralized Exchange (CEX)</h2>
+    <span class="dropdown-arrow">›</span>
+  </div>
+  <div class="dropdown-content" markdown="1">
 
 &nbsp;&nbsp;&nbsp;<a href="/binance/"><img src="/assets/images/binance.svg" style="height: 40px; vertical-align: middle; margin-right: 5px;"  alt="Binance crypto exchange Bitcoin Ethereum trading platform best in the world" /><br><br>Learn everything about Binance, the world’s leading cryptocurrency exchange — features, fees, security, and how to get started trading crypto.
    </a>
@@ -32,7 +37,8 @@ description: Resources, research, analysis & insights to navigate the crypto spa
 
 &nbsp;&nbsp;&nbsp;<a href="/kraken-com/"><img src="/assets/images/kraken.svg" style="height: 40px; vertical-align: middle; margin-right: 5px;"  alt="kraken.io app logo for crypto trading" /><br><br>Kraken.com is a trusted crypto exchange that blends top-tier security with pro-grade trading tools, built for serious investors navigating the digital asset seas.
    </a>
-  
+   
+  </div>
      
     
 <h3 style="text-align:center;">🏦 Decentralized Exchanges (DEX)</h3>
@@ -68,9 +74,9 @@ description: Resources, research, analysis & insights to navigate the crypto spa
 
 <div class="dropdown-section">
   <div class="dropdown-header">
-  <span class="dropdown-arrow">▶</span>
-  <span class="dropdown-title"><h2>Crypto Networks ( Chains )</h2></span>
-</div>
+    <h2>Networks/Chains</h2>
+    <span class="dropdown-arrow">›</span>
+  </div>
   <div class="dropdown-content" markdown="1">
 
 
@@ -83,9 +89,9 @@ description: Resources, research, analysis & insights to navigate the crypto spa
 
 <div class="dropdown-section">
   <div class="dropdown-header">
-  <span class="dropdown-arrow">▶</span>
-  <span class="dropdown-title"><h2>Crypto Wallets</h2></span>
-</div>
+    <h2>Wallets</h2>
+    <span class="dropdown-arrow">›</span>
+  </div>
   <div class="dropdown-content" markdown="1">
 
 
