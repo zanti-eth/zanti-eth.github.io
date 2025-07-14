@@ -1,5 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap');
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem; /* add side padding for mobile safety */
+  box-sizing: border-box;
+}
+
+a, button, h1, h2, p {
+  word-break: break-word;
+}
+
+
 body {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 16px;
@@ -200,6 +223,9 @@ p a {
   z-index: 1000; /* Ensure it stays above other content */
   border-bottom: 2px solid #24e60b;
   animation: slideDown 0.4s ease forwards;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
 }
 
 body.has-banner {
@@ -243,13 +269,22 @@ body.has-banner {
   font-weight: 600;
   margin-left: 1rem;
   cursor: pointer;
+  margin-left: 0;
 }
 
 #closeBanner {
   margin-left: 1rem;
   cursor: pointer;
   font-size: 1.2rem;
+  margin-left: 0;
 }
 
+@media (max-width: 768px) {
+  header, footer {
+    padding: 1.2rem;
+    margin: 1rem auto;
+    border-radius: 12px;
+    width: 95%;
+  } }
 
 
