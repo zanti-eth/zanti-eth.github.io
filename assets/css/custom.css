@@ -6,14 +6,23 @@ body {
   line-height: 1.6;
   color: #fff;
   background-color: #000;
-  background-image: url('/assets/images/gplay.png');
+  background-image: none;
 }
 
 header {
-
-    border-bottom: 1px solid #f3f8f3;
-    padding-bottom: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.05); /* soft translucent background */
+  backdrop-filter: blur(6px); /* glassy blur effect */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* subtle border */
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  padding: 2rem;
+  margin: 0 auto 2rem;
+  width: 95%;
+  max-width: 1200px;
+  font-size: 16px;
+  color: #eee;
 }
+
 footer {
   background-color: rgba(255, 255, 255, 0.05); /* slight translucent effect */
   backdrop-filter: blur(6px); /* soft glassy look (optional) */
