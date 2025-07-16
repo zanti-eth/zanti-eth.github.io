@@ -223,7 +223,7 @@ p a {
   z-index: 1000; /* Ensure it stays above other content */
   border-bottom: 2px solid #24e60b;
   animation: slideDown 0.4s ease forwards;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
   gap: 0.5rem;
 }
