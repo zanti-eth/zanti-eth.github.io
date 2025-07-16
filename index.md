@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "indexxxxxx"
+title: "indexxxxxxxx"
 description: Resources, research, analysis & insights to navigate the crypto space with 0BTC
 ---
 
