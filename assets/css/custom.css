@@ -139,89 +139,6 @@ p a {
   font-weight: 500 !important;
 }
 
-/* ===== Dropdown Styles ===== */
-
-
-
-.dropdown-section {
-  margin: 1rem 0;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.05);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(10px);
-  overflow: hidden;
-  transition: all 0.3s ease;
-}
-
-.dropdown-section:hover {
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
-}
-
-.dropdown-header {
-  padding: 1rem 1.5rem;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #fff;
-  font-weight: 500;
-  font-size: clamp(1rem, 1.1vw, 1.1rem);
-  gap: 0.6rem;
-}
-
-.dropdown-arrow {
-  display: inline-block;
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  min-width: 24px;
-  text-align: center;
-}
-
-.dropdown-section.active .dropdown-arrow {
-  transform: rotate(90deg);
-}
-
-.dropdown-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  color: rgba(241, 241, 241, 0.9);
-  font-size: clamp(0.9rem, 1vw, 0.95rem);
-  line-height: 1.5;
-  padding: 0 1.5rem;
-}
-
-.dropdown-section.active .dropdown-content {
-  max-height: 1000px; /* Adjust based on your content needs */
-  padding: 0 1.5rem 1rem;
-  margin-top: -0.5rem;
-  padding-top: 0.5rem;
-}
-
-/* Mobile optimizations */
-@media (max-width: 768px) {
-  .dropdown-header {
-    padding: 0.8rem 1.2rem;
-  }
-  
-  .dropdown-content {
-    padding: 0 1.2rem;
-    transition: max-height 0.5s cubic-bezier(0.32, 0.72, 0, 1);
-  }
-  
-  .dropdown-section.active .dropdown-content {
-    padding: 0 1.2rem 0.8rem;
-  }
-}
-
-
-/* Open State */
-
-
-.dropdown-section.open .dropdown-arrow {
-  transform: rotate(90deg);
-}
-
 /* PWA android app install banner */
 
 .install-banner {
@@ -303,3 +220,23 @@ body.has-banner {
   } }
 
 
+.social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.social-icons a img {
+  height: 40px;
+  vertical-align: middle;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.1);
+  opacity: 0.85;
+  /* Optional: subtle shadow */
+  /* filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2)); */
+}
