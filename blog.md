@@ -4,6 +4,8 @@ title: Blog
 permalink: /blog/
 ---
 
+<div class="content-box">
+
 <h1>Blog Posts</h1>
 <ul>
   {% for post in site.posts %}
@@ -13,3 +15,5 @@ permalink: /blog/
     </li>
   {% endfor %}
 </ul>
+
+</div>
