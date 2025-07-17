@@ -7,6 +7,7 @@ description: Resources, research, analysis & insights to navigate the crypto spa
 author: zanti
 email: zantti@proton.me
 lang: en
+permalink: /blog/:title/
 
 # Optional extras:
 show_downloads: false
