@@ -35,30 +35,32 @@ description: Resources, research, analysis & insights to navigate the crypto spa
      
     
 
-### Decentralized Exchange (DEX)
+<h3>Decentralized Exchange (DEX)</h3>
    
 
-&nbsp;&nbsp;&nbsp;<a href="/uniswap/"><img src="/assets/images/uniswap.svg" style="height: 20px; vertical-align: middle; margin-right: 5px;"  alt="kraken.io app logo for crypto trading" /><br><br>Kraken.com is a trusted crypto exchange that blends top-tier security with pro-grade trading tools, built for serious investors navigating the digital asset seas.
-   </a>
+&nbsp;&nbsp;&nbsp;<a href="/uniswap/"><img src="/assets/images/uniswap.svg" style="height: 20px; vertical-align: middle; margin-right: 5px;"  alt="kraken.io app logo for crypto trading" /><br>Uniswap description
+   </a><br><br>
 
 
-### Decentralized Exchange Aggregators (DEX Aggregators)
+<h3>Decentralized Exchange Aggregators (DEX Aggregators)</h3>
    
 
 &nbsp;&nbsp;&nbsp;<a href="/cowswap/"><img src="/assets/images/cow.svg" style="height: 20px; vertical-align: middle; margin-right: 5px;"  alt="kraken.io app logo for crypto trading" /><br><br>CoWSwap
-   </a>
+   </a><br><br>
+
+<h2>Onchain Explorers</h2>
 
 
-## Crypto Gaming
+<h2>Crypto Gaming</h2>
   
 
 
 
-&nbsp;&nbsp;&nbsp;<a href="/cryptoroyale/"><img src="/assets/images/cryptoroyale.svg" style="height: 20px; vertical-align: middle; margin-right: 5px;"  alt="CryptoRoyale.one game logo with ROY token reward system" /><br><br>Explore CryptoRoyale.one, the free-to-play battle royale crypto game where skill meets strategy — earn ROY tokens by surviving the arena.
-   </a>
+&nbsp;&nbsp;&nbsp;<a href="/cryptoroyale/"><img src="/assets/images/cryptoroyale.svg" style="height: 30px; vertical-align: middle; margin-right: 5px;"  alt="CryptoRoyale.one game logo with ROY token reward system" /><br>Explore CryptoRoyale.one, the free-to-play battle royale crypto game where skill meets strategy — earn ROY tokens by surviving the arena.
+   </a><br><br>
 
 
-## Networks/Chains
+<h2>Networks/Chains</h2>
    
 
 
