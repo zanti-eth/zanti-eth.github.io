@@ -6,15 +6,15 @@ description: Resources, research, analysis & insights to navigate the crypto spa
 
 <div class="content-box">
 
-<h1>Cryptocurrencies</h1><br><br>
+<h1>Cryptocurrencies</h1>
 
-<h2>Crypto Trading</h2><br>
+<h2>Crypto Trading</h2>
 
-<h3>Centralized Exchange (CEX)</h3><br>
+<h3>Centralized Exchange (CEX)</h3>
 
 
-&nbsp;&nbsp;&nbsp;<a href="/binance/"><img src="/assets/images/binance.svg" style="height: 30px; vertical-align: middle; margin-right: 5px;"  alt="Binance crypto exchange Bitcoin Ethereum trading platform best in the world" /><br><br>Learn everything about Binance, the world’s leading cryptocurrency exchange — features, fees, security, and how to get started trading crypto.
-   </a>
+&nbsp;&nbsp;&nbsp;<a href="/binance/"><img src="/assets/images/binance.svg" style="height: 30px; vertical-align: middle; margin-right: 5px;"  alt="Binance crypto exchange Bitcoin Ethereum trading platform best in the world" /><br>Learn everything about Binance, the world’s leading cryptocurrency exchange — features, fees, security, and how to get started trading crypto.
+   </a><br>
 
 &nbsp;&nbsp;&nbsp;<a href="/coinbase/"><img src="/assets/images/coinbase.svg" style="height: 30px; vertical-align: middle; margin-right: 5px;"  alt="Coinbase app logo for crypto trading" /><br><br>Discover how to use Coinbase, the most beginner-friendly crypto platform — buy, sell, and store digital assets with ease and security.
    </a>
