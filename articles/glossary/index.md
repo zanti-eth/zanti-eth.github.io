@@ -5,6 +5,8 @@ layout: default
 permalink: /glossary/
 ---
 
+<div class="content-box">
+
 # 📚 Crypto Glossary
 
 Welcome to the **Crypto Glossary** — your go-to place to decode the wild language of Web3, crypto Twitter, and degen culture.
@@ -23,3 +25,5 @@ Click on any term below to learn more:
 - [Rugpull](./rugpull.md)
 
 _This list will expand over time, so check back often!_
+
+</div>
