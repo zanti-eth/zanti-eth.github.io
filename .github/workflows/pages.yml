@@ -20,7 +20,7 @@ permissions:
 # Allow one concurrent deployment
 concurrency:
   group: "pages"
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -33,17 +33,27 @@ jobs:
           fetch-depth: 0
           submodules: true
 
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v4
-
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.3
           bundler-cache: true
 
-      - name: Build site
+      # NEW: Install Node.js and build the theme's assets
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '16'
+      - name: Install JS dependencies
+        run: npm install
+      - name: Build JS assets
+        run: npm run build
+
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v4
+
+      - name: Build site with Jekyll
         run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: "production"
