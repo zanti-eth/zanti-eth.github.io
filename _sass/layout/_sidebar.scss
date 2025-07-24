@@ -54,26 +54,32 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
   }
 
   #avatar {
-    display: block;
-    width: 6.5rem;
-    height: 6.5rem;
-    overflow: hidden;
-    box-shadow: var(--avatar-border-color) 0 0 0 2px;
-    transform: translateZ(0); /* fixed the zoom in Safari */
+  display: block;
+  width: 6.5rem;
+  height: 6.5rem;
+  overflow: hidden;
+  box-shadow: var(--avatar-border-color) 0 0 0 2px;
+  transform: translateZ(0);
 
-    @include bp.sm {
-      width: 7rem;
-      height: 7rem;
-    }
+  @include bp.sm {
+    width: 7rem;
+    height: 7rem;
+  }
 
-    img {
-      transition: transform 0.5s;
+  img {
+    transition: transform 0.5s;
+    /* NEW: Make the image 50% larger than its container by default.
+      This will zoom in on your ant. You can adjust the value (e.g., 1.4, 1.6) 
+      to get the perfect size.
+    */
+    transform: scale(1.5);
 
-      &:hover {
-        transform: scale(1.2);
-      }
+    &:hover {
+      /* Adjust the hover scale to be relative to the new default size */
+      transform: scale(1.7);
     }
   }
+}
 
   .profile-wrapper {
     @include mx.mt-mb(2.5rem);
