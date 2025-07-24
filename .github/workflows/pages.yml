@@ -31,7 +31,10 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          submodules: true # This line is now uncommented to fetch theme dependencies
+          # The 'submodules: true' option is replaced by the explicit step below
+
+      - name: Init Submodules
+        run: git submodule update --init --recursive
 
       - name: Setup Pages
         id: pages
