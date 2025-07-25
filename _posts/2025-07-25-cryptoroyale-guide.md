@@ -2,7 +2,7 @@
 title: "CryptoRoyale: A Deep Dive into the Skill-Based P2E Arena"
 date: 2025-07-26 11:00:00 +0300
 categories: [Crypto, Gaming]
-tags: [cryptoroyale, play-to-earn, p2e, guide, skill-based]
+tags: [cryptoroyale, play-to-earn, p2e, guide, skill-based, skin wars]
 pin: false
 image:
   path: /assets/img/cryptoroyale.png # Optional: Create a hero image for this post
@@ -66,13 +66,24 @@ You can change your color by picking up colored boxes that spawn randomly on the
 
 ---
 
-## Game Modes
+## Game Modes & Features
 
 CryptoRoyale offers several ways to play and earn:
 
 -   **Ranked:** The standard game mode where you play against others to climb the leaderboard and earn ROY based on your placement.
 -   **Tournaments:** Scheduled events with larger prize pools. These are highly competitive and are a great way to earn a lot of ROY if you are skilled.
 -   **Custom Games:** Create private lobbies to play with friends or practice against bots. This is the best way to learn the game without pressure.
+
+### Skin Wars: The Daily Clan Battle
+Skin Wars is a unique, daily competition that adds a social and strategic layer to the game. It's not just about individual skill, but about clan loyalty.
+
+**How it works:**
+1.  **Join a Clan:** In the game, you can equip a skin. Each skin belongs to a "clan" (e.g., the Cat Clan, the Robot Clan, the Abstract Clan). By equipping a skin, you are representing that clan for the day.
+2.  **Compete Daily:** As you play in Ranked mode, your performance contributes to your clan's total score.
+3.  **Winning Clan:** At the end of the day, the clan with the highest collective score wins.
+4.  **Shared Prize Pool:** All players who participated in the winning clan for that day receive a share of a daily ROY prize pool.
+
+This system encourages players to collect different skins and coordinate with others, adding a fun meta-game on top of the core gameplay. It also creates a "Create-to-Earn" opportunity for artists, whose submitted skins can become the foundation for new clans.
 
 ---
 
