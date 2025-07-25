@@ -164,13 +164,16 @@ app:
   screenshots:
     - src: /assets/img/screenshots/screenshot1.png
       type: image/png
-      sizes: 1080x2136 
+      sizes: 1080x1920
+      form_factor: "narrow" # This tells the browser it's a mobile screenshot
     - src: /assets/img/screenshots/screenshot2.png
       type: image/png
       sizes: 1080x1920
+      form_factor: "narrow"
     - src: /assets/img/screenshots/screenshot3.png
       type: image/png
       sizes: 1080x1920
+      form_factor: "narrow"
 
 
 paginate: 10
