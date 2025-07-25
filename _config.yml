@@ -147,6 +147,19 @@ pwa:
     deny_paths:
       # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
 
+# App Settings
+app:
+  name: 0BTC Life
+  title: 0BTC Life
+  
+  icons:
+    - src: /assets/img/favicon/android-chrome-192x192.png
+      type: image/png
+      sizes: 192x192
+    - src: /assets/img/favicon/android-chrome-512x512.png
+      type: image/png
+      sizes: 512x512
+
 paginate: 10
 
 # The base URL of your site
