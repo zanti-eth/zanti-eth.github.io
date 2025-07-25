@@ -151,6 +151,7 @@ pwa:
 app:
   name: 0BTC Life
   title: 0BTC Life
+  display: standalone
   
   icons:
     - src: /assets/img/favicons/android-chrome-192x192.png
@@ -170,6 +171,7 @@ app:
     - src: /assets/img/screenshots/screenshot3.png
       type: image/png
       sizes: 1080x1920
+
 
 paginate: 10
 
