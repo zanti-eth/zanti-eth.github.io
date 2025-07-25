@@ -159,6 +159,17 @@ app:
     - src: /assets/img/favicons/android-chrome-512x512.png
       type: image/png
       sizes: 512x512
+  
+  screenshots:
+    - src: /assets/img/screenshots/screenshot1.png
+      type: image/png
+      sizes: 1080x2136 
+    - src: /assets/img/screenshots/screenshot2.png
+      type: image/png
+      sizes: 1080x1920
+    - src: /assets/img/screenshots/screenshot3.png
+      type: image/png
+      sizes: 1080x1920
 
 paginate: 10
 
