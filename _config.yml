@@ -147,34 +147,6 @@ pwa:
     deny_paths:
       # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
 
-# App Settings
-app:
-  name: 0BTC Life
-  title: 0BTC Life
-  display: standalone
-  
-  icons:
-    - src: /assets/img/favicons/android-chrome-192x192.png
-      type: image/png
-      sizes: 192x192
-    - src: /assets/img/favicons/android-chrome-512x512.png
-      type: image/png
-      sizes: 512x512
-  
-  screenshots:
-    - src: /assets/img/screenshots/screenshot1.png
-      type: image/png
-      sizes: 1080x1920
-      form_factor: "narrow" # This tells the browser it's a mobile screenshot
-    - src: /assets/img/screenshots/screenshot2.png
-      type: image/png
-      sizes: 1080x1920
-      form_factor: "narrow"
-    - src: /assets/img/screenshots/screenshot3.png
-      type: image/png
-      sizes: 1080x1920
-      form_factor: "narrow"
-
 
 paginate: 10
 

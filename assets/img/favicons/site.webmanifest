@@ -2,6 +2,7 @@
 layout: compress
 ---
 {% assign favicon_path = "/assets/img/favicons" | relative_url %}
+{% assign screenshot_path = "/assets/img/screenshots" | relative_url %}
 {
   "name": "{{ site.title }}",
   "short_name": "{{ site.title }}",
@@ -18,8 +19,32 @@ layout: compress
       "type": "image/png"
     }
   ],
-  "start_url": "/",
+  "screenshots": [
+    {
+      "src": "{{ screenshot_path }}/screenshot1.webp",
+      "type": "image/png",
+      "sizes": "1080x1920",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "{{ screenshot_path }}/screenshot2.webp",
+      "type": "image/png",
+      "sizes": "1080x1920",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "{{ screenshot_path }}/screenshot3.webp",
+      "type": "image/png",
+      "sizes": "1080x1920",
+      "form_factor": "narrow"
+    }
+  ],
+  "start_url": "/?source=pwa",
   "theme_color": "#2a1e6b",
   "background_color": "#ffffff",
-  "display": "standalone"
+  "display": "standalone",
+  "orientation": "portrait",
+  "lang": "en",
+  "scope": "/",
+  "id": "/?source=pwa"
 }
