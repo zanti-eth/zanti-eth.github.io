@@ -3,7 +3,7 @@ title: The Ultimate Guide to Binance
 date: 2025-07-24 20:15:00 +0300
 categories: [Crypto, Exchanges]
 tags: [binance, trading, guide, cex]
-pin: true
+pin: false
 image:
   path: /assets/img/binance.webp
   alt: A graphic showing the Binance logo and trading charts.
