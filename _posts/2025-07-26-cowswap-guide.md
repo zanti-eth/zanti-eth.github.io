@@ -99,10 +99,6 @@ Compared to traditional DEXs:
 
 > Table: Comparison of CoW Swap with other popular DEXs
 
-
-> CoW Swap gives you the best of all worlds: aggregation, efficiency, and safety.
-{: .prompt-info }
-
 ---
 
 ## The Role of Gnosis in CoW Swap
