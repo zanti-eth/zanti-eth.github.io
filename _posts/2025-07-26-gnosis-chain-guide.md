@@ -1,7 +1,7 @@
 ---
 title: "Gnosis Chain: Ethereum’s Most Decentralized Sidechain"
 date: 2025-07-26 01:30:00 +0300
-categories: [Blockchains, Ethereum, Sidechains]
+categories: [Blockchains, Ethereum Sidechains]
 tags: [gnosis, sidechain, xDai, staking, governance, gnosis safe]
 pin: false
 image:

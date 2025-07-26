@@ -1,7 +1,7 @@
 ---
 title: "CoW Swap: The MEV-Protected DEX Aggregator Built on Gnosis"
 date: 2025-07-26 00:30:00 +0300
-categories: [Blockchains, Ethereum, Sidechains, DEX Aggregators]
+categories: [Crypto Trading, DEX Aggregators]
 tags: [cowswap, dex, mev protection, batch auctions, gnosis, solvers, defi history]
 pin: false
 image:

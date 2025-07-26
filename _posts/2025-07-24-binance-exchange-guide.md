@@ -1,7 +1,7 @@
 ---
 title: The Ultimate Guide to Binance
 date: 2025-07-24 20:15:00 +0300
-categories: [Centralized Exchanges (CEXes)]
+categories: [Crypto Trading, Centralized Exchanges (CEXes)]
 tags: [binance, trading, guide, cex]
 pin: false
 image:
