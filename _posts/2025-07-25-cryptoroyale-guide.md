@@ -5,7 +5,7 @@ categories: [Crypto, Gaming]
 tags: [cryptoroyale, play-to-earn, p2e, guide, skill-based, skin wars]
 pin: false
 image:
-  path: /assets/img/cryptoroyale.png # Optional: Create a hero image for this post
+  path: /assets/img/cryptoroyale.webp # Optional: Create a hero image for this post
   alt: A hero image for the CryptoRoyale game guide.
 ---
 

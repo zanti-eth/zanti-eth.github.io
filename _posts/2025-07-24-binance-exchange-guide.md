@@ -5,7 +5,7 @@ categories: [Crypto, Exchanges]
 tags: [binance, trading, guide, cex]
 pin: true
 image:
-  path: /assets/img/binance.png
+  path: /assets/img/binance.webp
   alt: A graphic showing the Binance logo and trading charts.
 ---
 
