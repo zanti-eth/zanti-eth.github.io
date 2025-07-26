@@ -1,7 +1,7 @@
 ---
 title: "CryptoRoyale: A Deep Dive into the Skill-Based P2E Arena"
 date: 2025-07-25 15:30:00 +0300
-categories: [Crypto, Gaming]
+categories: [Web3 Gaming]
 tags: [cryptoroyale, play-to-earn, p2e, guide, skill-based, skin wars]
 pin: false
 image:
