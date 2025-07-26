@@ -85,13 +85,20 @@ Most DEXs only do **single-route execution** (e.g., Uniswap → 1 path). Aggrega
 - 🔐 **Settles via batch auctions** to stop sandwich attacks
 - 🧾 **Transparent order book** and solver performance
 
+> CoW Swap gives you the best of all worlds: aggregation, efficiency, and safety.
+{: .prompt-info }
+
 Compared to traditional DEXs:
+
 | DEX/Aggregator | MEV Protection | Batch Auctions | Peer Matching | Protocol Fees |
 |----------------|----------------|----------------|----------------|----------------|
 | **CoW Swap**   | ✅ Yes          | ✅ Yes          | ✅ Yes          | ❌ None        |
 | 1inch          | ❌ No           | ❌ No           | ❌ No           | ✅ Yes         |
 | Matcha         | ❌ No           | ❌ No           | ❌ No           | ✅ Yes         |
 | Uniswap        | ❌ No           | ❌ No           | ❌ No           | ✅ Yes         |
+
+> Table: Comparison of CoW Swap with other popular DEXs
+
 
 > CoW Swap gives you the best of all worlds: aggregation, efficiency, and safety.
 {: .prompt-info }
