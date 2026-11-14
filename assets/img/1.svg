@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+<title id="title">Crypto Market Overview — November 14, 2026</title>
+<desc id="desc">Daily crypto market snapshot showing Bitcoin at 65,876 dollars, Ether at 1,851 dollars, market capitalization at 2.25 trillion dollars, Bitcoin dominance at 58.7 percent, and Fear and Greed at 13, Extreme Fear.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#101827"/><stop offset="1" stop-color="#080d17"/></linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#38bdf8"/><stop offset="1" stop-color="#818cf8"/></linearGradient>
+</defs>
+<rect width="1200" height="675" rx="28" fill="url(#bg)"/>
+<circle cx="1060" cy="80" r="190" fill="#2563eb" opacity=".08"/>
+<circle cx="180" cy="650" r="230" fill="#06b6d4" opacity=".05"/>
+<text x="64" y="72" fill="#8ea3c3" font-family="Inter,Arial,sans-serif" font-size="18" letter-spacing="4">DAILY MARKET BRIEF</text>
+<text x="64" y="125" fill="#f8fafc" font-family="Inter,Arial,sans-serif" font-size="42" font-weight="700">CRYPTO MARKET OVERVIEW</text>
+<text x="64" y="164" fill="#94a3b8" font-family="Inter,Arial,sans-serif" font-size="20">Saturday · November 14, 2026 · Snapshot</text>
+<rect x="64" y="205" width="1072" height="2" fill="#253247"/>
+<!-- BTC -->
+<rect x="64" y="235" width="520" height="150" rx="18" fill="#111f31" stroke="#26364b"/>
+<circle cx="112" cy="282" r="25" fill="#f7931a"/>
+<text x="112" y="291" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="27" font-weight="700">₿</text>
+<text x="155" y="278" fill="#a8bad1" font-family="Inter,Arial,sans-serif" font-size="18">BITCOIN · BTC</text>
+<text x="98" y="340" fill="#f8fafc" font-family="Inter,Arial,sans-serif" font-size="39" font-weight="700">$65,876</text>
+<text x="490" y="340" text-anchor="end" fill="#fb7185" font-family="Inter,Arial,sans-serif" font-size="25" font-weight="700">−4.2%</text>
+<!-- ETH -->
+<rect x="616" y="235" width="520" height="150" rx="18" fill="#111f31" stroke="#26364b"/>
+<circle cx="664" cy="282" r="25" fill="#627eea"/>
+<path d="M664 263 L650 284 L664 292 L678 284 Z M664 296 L650 288 L664 307 L678 288 Z" fill="#fff" opacity=".95"/>
+<text x="707" y="278" fill="#a8bad1" font-family="Inter,Arial,sans-serif" font-size="18">ETHEREUM · ETH</text>
+<text x="650" y="340" fill="#f8fafc" font-family="Inter,Arial,sans-serif" font-size="39" font-weight="700">$1,851</text>
+<text x="1042" y="340" text-anchor="end" fill="#fb7185" font-family="Inter,Arial,sans-serif" font-size="25" font-weight="700">−4.6%</text>
+<!-- Market metrics -->
+<rect x="64" y="415" width="330" height="135" rx="18" fill="#111f31" stroke="#26364b"/>
+<text x="92" y="455" fill="#94a3b8" font-family="Inter,Arial,sans-serif" font-size="16">TOTAL MARKET CAP</text>
+<text x="92" y="505" fill="#f8fafc" font-family="Inter,Arial,sans-serif" font-size="34" font-weight="700">$2.25T</text>
+<text x="92" y="531" fill="#fb7185" font-family="Inter,Arial,sans-serif" font-size="17">−6.6% · 24h</text>
+<rect x="414" y="415" width="330" height="135" rx="18" fill="#111f31" stroke="#26364b"/>
+<text x="442" y="455" fill="#94a3b8" font-family="Inter,Arial,sans-serif" font-size="16">BTC DOMINANCE</text>
+<text x="442" y="505" fill="#f8fafc" font-family="Inter,Arial,sans-serif" font-size="34" font-weight="700">58.7%</text>
+<rect x="442" y="522" width="270" height="8" rx="4" fill="#26364b"/>
+<rect x="442" y="522" width="158" height="8" rx="4" fill="url(#accent)"/>
+<rect x="764" y="415" width="372" height="135" rx="18" fill="#111f31" stroke="#26364b"/>
+<text x="792" y="455" fill="#94a3b8" font-family="Inter,Arial,sans-serif" font-size="16">FEAR &amp; GREED INDEX</text>
+<text x="792" y="505" fill="#fb7185" font-family="Inter,Arial,sans-serif" font-size="34" font-weight="700">13 / 100</text>
+<text x="792" y="531" fill="#fb7185" font-family="Inter,Arial,sans-serif" font-size="17">EXTREME FEAR</text>
+<rect x="64" y="584" width="1072" height="1" fill="#253247"/>
+<text x="64" y="622" fill="#64748b" font-family="Inter,Arial,sans-serif" font-size="14">Data snapshot · Crypto Daily Watch (Nov 14, 2026) · Values may vary by provider and timestamp</text>
+<text x="1136" y="646" text-anchor="end" fill="#64748b" font-family="Inter,Arial,sans-serif" font-size="13">INFORMATIONAL · NOT INVESTMENT ADVICE</text>
+</svg>
