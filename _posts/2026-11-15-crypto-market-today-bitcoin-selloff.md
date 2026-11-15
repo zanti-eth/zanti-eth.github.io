@@ -2,7 +2,7 @@
 title: "Crypto Market Today, November 15, 2026: Bitcoin Sell-Off Deepens"
 date: 2026-11-15 00:00:00 +0200
 description: "Crypto market update for November 15, 2026: Bitcoin trades near $64,500 after a three-month low, ETF outflows persist, and Ethereum and XRP slide."
-categories: [Cybersecurity, Threat Intelligence]
+categories: [Crypto Markets, Market Analysis]
 tags: [crypto, bitcoin, ethereum, XRP, ETF, crypto-market, november-2026]
 pin: false
 ---

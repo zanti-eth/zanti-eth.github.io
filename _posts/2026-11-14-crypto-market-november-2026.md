@@ -2,7 +2,7 @@
 title: "Crypto Market in November 2026: Bitcoin Under Pressure as ETF Outflows Mount"
 date: 2026-11-14 00:00:00 +0200
 description: "A November 2026 crypto market update covering Bitcoin and Ethereum prices, ETF outflows, US inflation, the Binance breach and key risks to watch."
-categories: [Cybersecurity, Threat Intelligence]
+categories: [Crypto Markets, Market Analysis]
 tags: [crypto, bitcoin, ethereum, ETF, crypto-market, november-2026]
 pin: false
 image:
